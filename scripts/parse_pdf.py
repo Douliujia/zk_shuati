@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""从 PDF 解析选择题，生成带 LaTeX / 公式截图的 JSON 题库。"""
+"""从 PDF 解析选择题，题干/公式以 PDF 原图截图为主，保证与源文档一致。"""
 
 from __future__ import annotations
 
@@ -18,6 +18,10 @@ ROOT = Path(__file__).resolve().parent.parent
 PDF_PATH = ROOT / "自动控制原理选择题（100题）.pdf"
 OUT_JSON = ROOT / "data" / "questions.json"
 FORMULA_DIR = ROOT / "data" / "formulas"
+
+CONTENT_MARGIN = 72.0
+CROP_MATRIX = fitz.Matrix(8, 8)
+CROP_PAD = (-8, -6, 8, 6)
 
 SYMBOL_MAP = {
     "\uf02b": "+",
@@ -153,28 +157,26 @@ def build_option_segments(
     label: str,
     img_counter: List[int],
     page: fitz.Page,
-    lines: List[dict],
-    y0: float,
-    y1: float,
+    markers: Dict[str, fitz.Rect],
+    opt_y1: float,
 ) -> List[dict]:
     val = val.strip()
-    formula_like = bool(re.search(r"[=+]|s\s*s|s\)|\(\s*1\)", val)) and len(re.findall(r"[\u4e00-\u9fff]", val)) < 4
-    if re.search(r"[\u4e00-\u9fff]", val) and not formula_like:
-        return [{"type": "text", "content": text_to_latex_inline(val)}]
+    formula_like = bool(
+        re.search(r"[=+]|s\s*s|s\)|\(\s*1\)|G\(|H\(|\\", val)
+        or any("\uf000" <= ch <= "\uf0ff" for ch in val)
+    ) and len(re.findall(r"[\u4e00-\u9fff]", val)) < 4
+    has_marker = label in markers
+    # 纯中文选项保留文字；PDF 上能定位到标记或含公式的选项用原图
+    if not has_marker and re.search(r"[\u4e00-\u9fff]", val) and not formula_like:
+        return [{"type": "text", "content": val}]
 
-    bbox = find_formula_bbox_for_text(val, lines, page.rect, y0, y1)
-    if bbox and bbox.width > 5 and bbox.height > 5:
-        img_counter[0] += 1
-        rel = crop_formula_image(page, bbox, f"q{qid}_opt_{label}_{img_counter[0]}")
+    img_counter[0] += 1
+    rel = crop_option_on_page(
+        page, label, markers, opt_y1, f"q{qid}_opt_{label}_{img_counter[0]}"
+    )
+    if rel:
         return [{"type": "image", "src": rel, "alt": f"选项{label}"}]
-
-    if formula_like:
-        img_counter[0] += 1
-        rel = crop_formula_between_lines(page, lines, y0, y1, f"q{qid}_opt_{label}_{img_counter[0]}")
-        if rel:
-            return [{"type": "image", "src": rel, "alt": f"选项{label}"}]
-
-    return [{"type": "text", "content": text_to_latex_inline(val)}]
+    return [{"type": "text", "content": val}]
 
 
 def extract_lines(page: fitz.Page) -> List[dict]:
@@ -221,11 +223,15 @@ def extract_lines(page: fitz.Page) -> List[dict]:
 
 def line_bbox(line: dict, page_rect: fitz.Rect) -> fitz.Rect:
     size = line.get("size", 12)
-    height = max(size * 1.35, 14)
+    height = max(size * 1.45, 15)
     x0 = max(0, line["left"] - 4)
     y0 = max(0, line["top"] - 3)
-    x1 = min(page_rect.width, line.get("right", line["left"] + 80) + 8)
-    y1 = min(page_rect.height, line["top"] + height + 6)
+    text = line.get("text", "")
+    cjk = bool(re.search(r"[\u4e00-\u9fff]", text))
+    char_w = size * (0.92 if cjk else 0.58)
+    est_right = line["left"] + max(len(text) * char_w, size * 2)
+    x1 = min(page_rect.width, max(line.get("right", est_right), est_right) + 10)
+    y1 = min(page_rect.height, line["top"] + height + 4)
     return fitz.Rect(x0, y0, x1, y1)
 
 
@@ -241,38 +247,163 @@ def merge_bbox(rects: List[fitz.Rect]) -> fitz.Rect:
 def crop_formula_image(page: fitz.Page, bbox: fitz.Rect, name: str) -> str:
     FORMULA_DIR.mkdir(parents=True, exist_ok=True)
     rel = f"formulas/{name}.png"
-    clip = (bbox + (-12, -12, 12, 12)) & page.rect
-    pix = page.get_pixmap(matrix=fitz.Matrix(6, 6), clip=clip, alpha=False)
+    clip = (bbox + CROP_PAD) & page.rect
+    pix = page.get_pixmap(matrix=CROP_MATRIX, clip=clip, alpha=False)
     pix.save(str(FORMULA_DIR / f"{name}.png"))
     return rel
 
 
-def find_math_lines_in_range(lines: List[dict], y0: float, y1: float) -> List[dict]:
-    return [ln for ln in lines if y0 <= ln["top"] <= y1 and (ln.get("math") or ln["left"] > 130)]
+def region_bbox(page: fitz.Page, lines: List[dict], y0: float, y1: float) -> fitz.Rect:
+    """合并纵坐标范围内的行，并使用 PDF 内容区全宽，保证题干/公式完整可见。"""
+    in_range = [ln for ln in lines if y0 - 1 <= ln["top"] <= y1 + 1]
+    content_x1 = page.rect.width - CONTENT_MARGIN
+    if not in_range:
+        return fitz.Rect(CONTENT_MARGIN, y0, content_x1, y1 + 18)
+    rects = [line_bbox(ln, page.rect) for ln in in_range]
+    merged = merge_bbox(rects)
+    x0 = max(0, min(merged.x0, CONTENT_MARGIN) - 4)
+    x1 = min(page.rect.width, max(merged.x1, content_x1) + 4)
+    ty0 = max(0, merged.y0 - 4)
+    ty1 = min(page.rect.height, merged.y1 + 6)
+    if ty1 - ty0 < 16:
+        ty1 = ty0 + 18
+    return fitz.Rect(x0, ty0, x1, ty1)
 
 
-def find_question_y_range(lines: List[dict], qid: int, block: str) -> Tuple[float, float]:
-    """根据页内行定位题目纵坐标范围（题干到选项前）。"""
-    head = block.split("\n", 1)[0][:20]
-    start_top = None
-    end_top = None
-    for i, ln in enumerate(lines):
-        if start_top is None and re.match(
-            rf"^\s*{qid}(?:\s*[\．\.]\s*|\s+(?=[\u4e00-\u9fff]))", ln["text"]
-        ):
-            start_top = ln["top"]
-            continue
-        if start_top is not None and OPTION_MARKER_FIND.search(ln["text"]):
-            end_top = ln["top"]
-            break
-        if start_top is not None and re.match(rf"^\s*{qid + 1}\s*[\．\.]", ln["text"]):
-            end_top = ln["top"]
-            break
+def find_next_question_top(page: fitz.Page, lines: List[dict], qid: int) -> float:
+    if qid >= 100:
+        return page.rect.height
+    for pat in (f"{qid + 1}.", f"{qid + 1}．"):
+        hits = page.search_for(pat)
+        if hits:
+            return min(h.y0 for h in hits)
+    for ln in lines:
+        if re.match(rf"^\s*{qid + 1}\s*[\．\.]", ln["text"]):
+            return ln["top"]
+    return page.rect.height
+
+
+def find_question_start_top(lines: List[dict], qid: int) -> Optional[float]:
+    for ln in lines:
+        if re.match(rf"^\s*{qid}(?:\s*[\．\.]\s*|\s+(?=[\u4e00-\u9fff]))", ln["text"]):
+            return ln["top"]
+    return None
+
+
+def find_option_markers_for_question(
+    page: fitz.Page, lines: List[dict], qid: int, stem_y0: float
+) -> Dict[str, fitz.Rect]:
+    """用 PDF 搜索定位本题 A/B/C/D 标记（支持两行两列布局）。"""
+    next_y = find_next_question_top(page, lines, qid)
+    candidates: Dict[str, List[fitz.Rect]] = {lab: [] for lab in "ABCD"}
+    y_min = stem_y0 + 4
+    for label in "ABCD":
+        for pat in (f"{label}.", f"{label}．", f"{label}、"):
+            for hit in page.search_for(pat):
+                if y_min <= hit.y0 < next_y - 2:
+                    candidates[label].append(hit)
+            if candidates[label]:
+                break
+
+    markers: Dict[str, fitz.Rect] = {}
+    for label, hits in candidates.items():
+        if hits:
+            markers[label] = min(hits, key=lambda h: h.y0)
+    return markers
+
+
+def find_question_y_range(page: fitz.Page, lines: List[dict], qid: int, block: str) -> Tuple[float, float]:
+    """定位题干纵坐标：从题号行到选项区之前。"""
+    start_top = find_question_start_top(lines, qid)
     if start_top is None:
         return 0, page_max(lines)
-    if end_top is None:
-        end_top = start_top + 120
-    return start_top, end_top - 2
+
+    markers = find_option_markers_for_question(page, lines, qid, start_top)
+    if len(markers) >= 2:
+        first_opt = min(m.y0 for m in markers.values())
+        end = first_opt - 4
+    else:
+        end = start_top + 100
+        for ln in lines:
+            if ln["top"] <= start_top:
+                continue
+            if OPTION_MARKER_FIND.search(ln["text"]):
+                end = ln["top"] - 2
+                break
+            if re.match(rf"^\s*{qid + 1}\s*[\．\.]", ln["text"]):
+                end = ln["top"] - 2
+                break
+
+    stem_lines = [ln for ln in lines if start_top <= ln["top"] < end]
+    if stem_lines:
+        last = max(stem_lines, key=lambda x: x["top"])
+        end = max(end, last["top"] + max(last.get("size", 12) * 1.5, 18))
+        if markers:
+            end = min(end, min(m.y0 for m in markers.values()) - 2)
+    return start_top, end
+
+
+def find_options_block_y_range(
+    page: fitz.Page, lines: List[dict], qid: int, stem_y0: float
+) -> Tuple[float, float]:
+    """定位选项区纵坐标范围。"""
+    next_y = find_next_question_top(page, lines, qid)
+    markers = find_option_markers_for_question(page, lines, qid, stem_y0)
+    if markers:
+        return min(m.y0 for m in markers.values()) - 4, next_y - 2
+
+    opt_start = stem_y0 + 4
+    opt_end = next_y - 2
+    for ln in lines:
+        if ln["top"] < stem_y0:
+            continue
+        if OPTION_MARKER_FIND.search(ln["text"]) and opt_start > stem_y0 + 4:
+            opt_start = min(opt_start, ln["top"])
+        elif OPTION_MARKER_FIND.search(ln["text"]):
+            opt_start = ln["top"]
+    return opt_start, opt_end
+
+
+def crop_option_on_page(
+    page: fitz.Page,
+    label: str,
+    markers: Dict[str, fitz.Rect],
+    y_max: float,
+    name: str,
+) -> Optional[str]:
+    """按 PDF 原样截取单个选项（含公式）。"""
+    if label not in markers:
+        return None
+    hit = markers[label]
+    order = ["A", "B", "C", "D"]
+    idx = order.index(label)
+    x0 = max(CONTENT_MARGIN, hit.x0 - 4)
+    x1 = page.rect.width - CONTENT_MARGIN
+    y0 = hit.y0 - 4
+    y1 = hit.y1 + 26
+
+    for next_lab in order[idx + 1:]:
+        if next_lab not in markers:
+            continue
+        nr = markers[next_lab]
+        if abs(nr.y0 - hit.y0) < 14:
+            x1 = min(x1, nr.x0 - 4)
+        else:
+            y1 = min(y1, nr.y0 - 2)
+            break
+
+    below_col = [
+        m
+        for lab, m in markers.items()
+        if lab != label and m.y0 > hit.y0 + 8 and abs(m.x0 - hit.x0) < 50
+    ]
+    if below_col:
+        y1 = min(y1, min(m.y0 for m in below_col) - 2)
+
+    bbox = fitz.Rect(x0, y0, x1, y1)
+    if bbox.width < 10 or bbox.height < 8:
+        return None
+    return crop_formula_image(page, bbox, name)
 
 
 def page_max(lines: List[dict]) -> float:
@@ -322,39 +453,15 @@ def extract_formula_segments(
     counter: List[int],
     block: str,
 ) -> Tuple[List[dict], Optional[str]]:
-    segments: List[dict] = []
+    """题干一律从 PDF 截取整段原图，保证与源文档格式一致。"""
     head = QUESTION_HEAD_RE.sub("", stem, count=1).strip()
-    head, answer_from_head = extract_answer(head)
+    _, answer_from_head = extract_answer(head)
 
-    y0, y1 = find_question_y_range(lines, qid, block)
-
-    chunks = [c.strip() for c in re.split(r"\n+", head) if c.strip()]
-    text_parts: List[str] = []
-    has_formula = False
-
-    for chunk in chunks:
-        is_cjk = re.search(r"[\u4e00-\u9fff]{2,}", chunk)
-        is_math_only = not is_cjk or re.match(r"^[\d\s+\-*/=().sSGDTK]+$", chunk)
-        if is_cjk and not is_math_only:
-            text_parts.append(chunk)
-        elif chunk and not is_cjk:
-            has_formula = True
-
-    if text_parts:
-        merged = " ".join(text_parts)
-        segments.append({"type": "text", "content": text_to_latex_inline(merged)})
-
-    if has_formula:
-        counter[0] += 1
-        rel = crop_formula_between_lines(page, lines, y0 + 8, y1, f"q{qid}_f_{counter[0]}")
-        if rel:
-            segments.append({"type": "image", "src": rel, "alt": "公式"})
-        elif not segments:
-            segments.append({"type": "text", "content": text_to_latex_inline(head)})
-    elif not segments:
-        segments.append({"type": "text", "content": text_to_latex_inline(head)})
-
-    return segments, answer_from_head
+    y0, y1 = find_question_y_range(page, lines, qid, block)
+    counter[0] += 1
+    bbox = region_bbox(page, lines, y0, y1)
+    rel = crop_formula_image(page, bbox, f"q{qid}_stem_{counter[0]}")
+    return [{"type": "image", "src": rel, "alt": f"第{qid}题"}], answer_from_head
 
 
 def find_page_for_question(qid: int, block: str, page_texts: List[str]) -> int:
@@ -399,6 +506,10 @@ def main() -> int:
     full_text = "\n".join(page_texts)
     blocks = parse_questions_from_text(full_text)
 
+    FORMULA_DIR.mkdir(parents=True, exist_ok=True)
+    for old in FORMULA_DIR.glob("*.png"):
+        old.unlink()
+
     questions: List[dict] = []
     img_counter = [0]
 
@@ -422,10 +533,14 @@ def main() -> int:
         if not answer:
             answer = ans2
 
-        y0, y1 = find_question_y_range(lines, qid, block)
+        y0, y1 = find_question_y_range(page, lines, qid, block)
+        opt_y0, opt_y1 = find_options_block_y_range(page, lines, qid, y0)
+        markers = find_option_markers_for_question(page, lines, qid, y0)
         options = {}
         for label, val in raw_opts.items():
-            options[label] = build_option_segments(val, qid, label, img_counter, page, lines, y0, y1)
+            options[label] = build_option_segments(
+                val, qid, label, img_counter, page, markers, opt_y1
+            )
 
         questions.append(
             {

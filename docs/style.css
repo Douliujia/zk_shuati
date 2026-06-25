@@ -169,9 +169,8 @@ main {
 .question-body .formula-img {
   display: block;
   margin: 12px auto;
-  width: auto;
+  width: 100%;
   height: auto;
-  min-width: min(100%, 300px);
   max-width: 100%;
   max-height: none;
   cursor: zoom-in;
@@ -179,8 +178,12 @@ main {
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 10px;
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
+  object-fit: contain;
+  image-rendering: auto;
+}
+
+.question-body .stem-img {
+  min-width: 0;
 }
 
 .question-body .formula-img-inline {

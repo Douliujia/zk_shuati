@@ -87,7 +87,7 @@ function renderSegments(segments, root, context = "stem") {
       root.appendChild(span);
     } else if (seg.type === "image") {
       const img = document.createElement("img");
-      img.className = context === "stem" ? "formula-img" : "formula-img";
+      img.className = context === "stem" ? "formula-img stem-img" : "formula-img";
       img.src = `${DATA_BASE}/${seg.src}`;
       img.alt = seg.alt || "公式";
       img.loading = "lazy";
