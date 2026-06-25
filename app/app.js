@@ -66,7 +66,7 @@ function persistWrongSet() {
   );
 }
 
-def enrichMathText(text) {
+function enrichMathText(text) {
   if (!text) return "";
   // 已含 $ 或主要为 Unicode 符号/中文时直接显示
   if (text.includes("$") || /[\u4e00-\u9fffωζαβγτΔ∠∞±]/.test(text)) return text;
@@ -355,7 +355,13 @@ function submitExam() {
 async function init() {
   loadPersisted();
   const res = await fetch(`${DATA_BASE}/questions.json`);
+  if (!res.ok) {
+    throw new Error(`题库加载失败 HTTP ${res.status}`);
+  }
   state.bank = await res.json();
+  if (!state.bank?.questions?.length) {
+    throw new Error("题库为空");
+  }
   els.title.textContent = state.bank.title;
 
   els.mode.addEventListener("change", () => startSession(true));
