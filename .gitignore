@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+page0.html
+pdf_sample.txt
+block_*.txt
+debug*.txt
+audit*.txt
+audit_out.txt
+raw87.txt
+sample.md
+md_test.log

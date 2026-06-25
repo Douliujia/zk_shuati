@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>自动控制原理 · 刷题背题</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [["$", "$"], ["\\(", "\\)"]],
+        displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+        processEscapes: true,
+      },
+      options: { skipHtmlTags: ["script", "noscript", "style", "textarea", "pre", "code"] },
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+  <header>
+    <h1 id="bank-title">自动控制原理选择题</h1>
+    <p>背题即时反馈 · 考试统一交卷 · 错题本本地保存</p>
+  </header>
+
+  <section class="toolbar">
+    <label>
+      模式
+      <select id="mode-select">
+        <option value="study">背题模式（即时反馈）</option>
+        <option value="exam">考试模式（交卷后看成绩）</option>
+      </select>
+    </label>
+    <label>
+      顺序
+      <select id="order-select">
+        <option value="sequential">顺序刷题</option>
+        <option value="random">随机乱序</option>
+      </select>
+    </label>
+    <label>
+      范围
+      <select id="scope-select">
+        <option value="all">全部题目</option>
+        <option value="wrong">仅错题</option>
+      </select>
+    </label>
+    <label>
+      操作
+      <button id="restart-btn" class="secondary" type="button">重新开始</button>
+    </label>
+  </section>
+
+  <main>
+    <div class="stats">
+      <div class="stat"><span>进度</span><strong id="stat-progress">0/0</strong></div>
+      <div class="stat"><span>正确</span><strong id="stat-correct">0</strong></div>
+      <div class="stat"><span>错误</span><strong id="stat-wrong">0</strong></div>
+      <div class="stat"><span>错题本</span><strong id="stat-bank">0</strong></div>
+    </div>
+    <div class="progress-wrap"><div class="progress-bar" id="progress-bar"></div></div>
+
+    <section class="card" id="quiz-panel">
+      <div class="question-meta">
+        <span id="question-index">第 1 题</span>
+        <span id="question-id">#1</span>
+      </div>
+      <div class="question-body" id="question-body"></div>
+      <div class="options" id="options"></div>
+      <div class="feedback" id="feedback"></div>
+      <div class="nav-row">
+        <button id="prev-btn" class="secondary" type="button">上一题</button>
+        <button id="submit-exam-btn" class="hidden" type="button">交卷查看成绩</button>
+        <button id="next-btn" type="button">下一题</button>
+      </div>
+    </section>
+
+    <section class="card hidden" id="result-panel">
+      <h2>考试结果</h2>
+      <p id="result-summary"></p>
+      <div id="wrong-review"></div>
+      <div class="nav-row">
+        <button id="review-wrong-btn" type="button">只刷错题</button>
+        <button id="back-study-btn" class="secondary" type="button">返回练习</button>
+      </div>
+    </section>
+  </main>
+
+  <div id="img-lightbox" class="img-lightbox hidden" aria-hidden="true">
+    <img id="lightbox-img" src="" alt="放大公式" />
+    <p>点击任意处关闭 · 滚轮可缩放浏览器页面</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

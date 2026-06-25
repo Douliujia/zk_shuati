@@ -1,0 +1,3980 @@
+{
+  "title": "自动控制原理选择题（100题）",
+  "source": "自动控制原理选择题（100题）.pdf",
+  "total": 100,
+  "questions": [
+    {
+      "id": 1,
+      "page": 1,
+      "segments": [
+        {
+          "type": "text",
+          "content": "惯性环节和积分环节的频率特性在（　）上相等。"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "幅频特性的斜率"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "最小幅值"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "相位变化率"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "穿越频率"
+          }
+        ]
+      },
+      "answer": "A"
+    },
+    {
+      "id": 2,
+      "page": 1,
+      "segments": [
+        {
+          "type": "text",
+          "content": "\\omega 从0 变化到+\\infty时，延迟环节频率特性极坐标图为（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "圆"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "半圆"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "椭圆"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "双曲线"
+          }
+        ]
+      },
+      "answer": "A"
+    },
+    {
+      "id": 3,
+      "page": 1,
+      "segments": [
+        {
+          "type": "text",
+          "content": "若系统的开环传 递函数为 ，则它的开环增益为（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q3_f_1.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "1"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "2"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "5"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "10"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 4,
+      "page": 1,
+      "segments": [
+        {
+          "type": "text",
+          "content": "二阶系统的传递函数 ，则该系统是（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q4_f_2.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "临界阻尼系统"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "欠阻尼系统"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "过阻尼系统"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "零阻尼系统"
+          }
+        ]
+      },
+      "answer": "B"
+    },
+    {
+      "id": 5,
+      "page": 1,
+      "segments": [
+        {
+          "type": "text",
+          "content": "若保持二阶系统的\\zeta 不变，提高\\omegan，则可以（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "提高上升时间和峰值时间"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "减少上升时间和峰值时间"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "提高上升时间和调整时间"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "减少上升时间和超调量"
+          }
+        ]
+      },
+      "answer": "B"
+    },
+    {
+      "id": 6,
+      "page": 1,
+      "segments": [
+        {
+          "type": "text",
+          "content": "一阶微分环节 ，当频率 时，则相频特性"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q6_f_3.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "45$^\\circ$"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "-45$^\\circ$"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "90$^\\circ$"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "-90$^\\circ$"
+          }
+        ]
+      },
+      "answer": "A"
+    },
+    {
+      "id": 7,
+      "page": 1,
+      "segments": [
+        {
+          "type": "text",
+          "content": "最小相位系统的开环增益越大，其（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "振荡次数越多"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "稳定裕量越大"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "相位变化越小"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "稳态误差越小"
+          }
+        ]
+      },
+      "answer": "D"
+    },
+    {
+      "id": 8,
+      "page": 1,
+      "segments": [
+        {
+          "type": "text",
+          "content": "设系统的特征方程为 ，则此系统 （　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "稳定"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "临界稳定"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "不稳定"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "稳定性不确定。"
+          }
+        ]
+      },
+      "answer": "A"
+    },
+    {
+      "id": 9,
+      "page": 1,
+      "segments": [
+        {
+          "type": "text",
+          "content": "某单位反馈系统的开环传递函数为：() ，当k=（　）时，闭环系统 临界稳定。"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q9_f_5.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "10"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "20"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "30"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "40"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 10,
+      "page": 1,
+      "segments": [
+        {
+          "type": "text",
+          "content": "设系统的特征方程为() ，则此系统中包含正实部特征的个数"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "0"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "1"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "2"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "3"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 11,
+      "page": 1,
+      "segments": [
+        {
+          "type": "text",
+          "content": "单位反馈系统开环传递函数为 ，当输入为单位阶跃时，则其位置误差"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q11_f_7.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "2"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "0.2"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "0.5"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "0.05"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 12,
+      "page": 2,
+      "segments": [
+        {
+          "type": "text",
+          "content": "若已知某串联校正装置的传递函数为 ，则它是一种（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q12_f_8.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "反馈校正"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "相位超前校正"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "相位滞后—超前校正"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "相位滞后校正"
+          }
+        ]
+      },
+      "answer": "D"
+    },
+    {
+      "id": 13,
+      "page": 2,
+      "segments": [
+        {
+          "type": "text",
+          "content": "稳态误差$e_{ss}$ 与误差信号$E(s)$的函数关系为（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": ") ( lim 0 s E e s ss  ="
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": ") ( lim 0 s sE e s ss  ="
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": ") ( lim s E e s ss \\infty  ="
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": ") ( lim s sE e s ss \\infty  ="
+          }
+        ]
+      },
+      "answer": "B"
+    },
+    {
+      "id": 14,
+      "page": 2,
+      "segments": [
+        {
+          "type": "text",
+          "content": "相位超前校正装置的奈氏曲线为（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "圆"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "上半圆"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "下半圆"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "45$^\\circ$弧线"
+          }
+        ]
+      },
+      "answer": "B"
+    },
+    {
+      "id": 15,
+      "page": 2,
+      "segments": [
+        {
+          "type": "text",
+          "content": "开环传递函数为$$G(s)$$H(s)$$= ,则实轴上的根轨迹为（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q15_f_13.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "[-3，\\infty)"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "[0，\\infty)"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "(-\\infty，-3]"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "[-3，0]"
+          }
+        ]
+      },
+      "answer": "D"
+    },
+    {
+      "id": 16,
+      "page": 2,
+      "segments": [
+        {
+          "type": "text",
+          "content": "某典型环节的传递函数是() ，则该环节是（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q16_f_14.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "比例环节"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "积分环节"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "惯性环节"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "微分环节"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 17,
+      "page": 2,
+      "segments": [
+        {
+          "type": "text",
+          "content": "已知系统的微分方程为 ，则系统的传递函数是（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q17_f_15.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "image",
+            "src": "formulas/q17_opt_A_16.png",
+            "alt": "选项A"
+          }
+        ],
+        "B": [
+          {
+            "type": "image",
+            "src": "formulas/q17_opt_B_17.png",
+            "alt": "选项B"
+          }
+        ],
+        "C": [
+          {
+            "type": "image",
+            "src": "formulas/q17_opt_C_18.png",
+            "alt": "选项C"
+          }
+        ],
+        "D": [
+          {
+            "type": "image",
+            "src": "formulas/q17_opt_D_19.png",
+            "alt": "选项D"
+          }
+        ]
+      },
+      "answer": "A"
+    },
+    {
+      "id": 18,
+      "page": 2,
+      "segments": [
+        {
+          "type": "text",
+          "content": "引出点前移越过一个方块图单元时，应在引出线支路上（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "并联越过的方块图单元"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "并联越过的方块图单元的倒数"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "串联越过的方块图单元"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "串联越过的方块图单元的倒数"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 19,
+      "page": 2,
+      "segments": [
+        {
+          "type": "text",
+          "content": "如果被调量随着给定量的变化而变化，这种控制系统叫（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "恒值调节系统"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "随动系统"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "连续控制系统"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "数字控制系统"
+          }
+        ]
+      },
+      "answer": "B"
+    },
+    {
+      "id": 20,
+      "page": 2,
+      "segments": [
+        {
+          "type": "text",
+          "content": "系统特征方程为() ，此系统中包含正实部特征根个数为（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "0"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "1"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "2"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "3"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 21,
+      "page": 2,
+      "segments": [
+        {
+          "type": "text",
+          "content": "一般为使系统有较好的稳定性,希望相位裕量为（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "0～15"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "15～30"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "30～60"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "60～90"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 22,
+      "page": 2,
+      "segments": [
+        {
+          "type": "text",
+          "content": "设一阶系统的传递函数是() ，且容许误差为5%，则其调整时间为（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q22_f_21.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "1"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "2"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "3"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "4"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 23,
+      "page": 3,
+      "segments": [
+        {
+          "type": "text",
+          "content": "某一系统的速度误差为零，则该系统的开环传递函数可能是（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "image",
+            "src": "formulas/q23_opt_A_22.png",
+            "alt": "选项A"
+          }
+        ],
+        "B": [
+          {
+            "type": "image",
+            "src": "formulas/q23_opt_B_23.png",
+            "alt": "选项B"
+          }
+        ],
+        "C": [
+          {
+            "type": "image",
+            "src": "formulas/q23_opt_C_24.png",
+            "alt": "选项C"
+          }
+        ],
+        "D": [
+          {
+            "type": "image",
+            "src": "formulas/q23_opt_D_25.png",
+            "alt": "选项D"
+          }
+        ]
+      },
+      "answer": "D"
+    },
+    {
+      "id": 24,
+      "page": 3,
+      "segments": [
+        {
+          "type": "text",
+          "content": "单位反馈系统开环传递函数为 ，当输入为单位斜坡时，其加速度 误差为（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q24_f_26.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "0"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "0.25"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "4"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "\\infty"
+          }
+        ]
+      },
+      "answer": "A"
+    },
+    {
+      "id": 25,
+      "page": 3,
+      "segments": [
+        {
+          "type": "text",
+          "content": "若已知某串联校正装置的传递函数为 ，则它是一种（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q25_f_27.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "相位超前校正"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "相位滞后校正"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "相位滞后—超前校正"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "反馈校正"
+          }
+        ]
+      },
+      "answer": "A"
+    },
+    {
+      "id": 26,
+      "page": 3,
+      "segments": [
+        {
+          "type": "text",
+          "content": "某校正环节传递函数 ，则其频率特性的奈氏图终点坐标为（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q26_f_28.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "(0，j0)"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "(1，j0)"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "(1，j1)"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "(10，j0)"
+          }
+        ]
+      },
+      "answer": "D"
+    },
+    {
+      "id": 27,
+      "page": 3,
+      "segments": [
+        {
+          "type": "text",
+          "content": "A、B 是高阶系统的二个极点，一般当极点A 距离虚轴比极点B 距离虚轴大于（　）时， 分析系统时可忽略极点A。"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "5 倍"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "4 倍"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "3 倍"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "2 倍"
+          }
+        ]
+      },
+      "answer": "A"
+    },
+    {
+      "id": 28,
+      "page": 3,
+      "segments": [
+        {
+          "type": "text",
+          "content": "某典型环节的传递函数是() ，则该环节是（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q28_f_29.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "比例环节"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "惯性环节"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "积分环节"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "微分环节"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 29,
+      "page": 3,
+      "segments": [
+        {
+          "type": "text",
+          "content": "已知系统的单位脉冲响应函数是() ，则系统的传递函数是（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q29_f_30.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "3 2.0 s"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "s 1.0"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "2 1.0 s"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "2 2.0 s"
+          }
+        ]
+      },
+      "answer": "A"
+    },
+    {
+      "id": 30,
+      "page": 3,
+      "segments": [
+        {
+          "type": "text",
+          "content": "梅逊公式主要用来（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "判断稳定性"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "计算输入误差"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "求系统的传递函数"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "求系统的根轨迹"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 31,
+      "page": 3,
+      "segments": [
+        {
+          "type": "text",
+          "content": "已知二阶系统单位阶跃响应曲线呈现出等幅振荡，则其阻尼比可能为（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "0.6"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "0.707"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "0"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "1"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 32,
+      "page": 3,
+      "segments": [
+        {
+          "type": "text",
+          "content": "若系统的传递函数在右半S 平面上没有零点和极点，则该系统称作（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "非最小相位系统"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "最小相位系统"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "不稳定系统"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "振荡系统"
+          }
+        ]
+      },
+      "answer": "B"
+    },
+    {
+      "id": 33,
+      "page": 3,
+      "segments": [
+        {
+          "type": "text",
+          "content": "某系统的闭环传递函数为： ，当k=（　）时，闭环系统临 界稳定。"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q33_f_31.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "2"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "4"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "6"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "8"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 34,
+      "page": 4,
+      "segments": [
+        {
+          "type": "text",
+          "content": "系统的传递函数 ，其系统的增益和型次为 （　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q34_f_32.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "5，2"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "5/4，2"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "5，4"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "5/4，4"
+          }
+        ]
+      },
+      "answer": "B"
+    },
+    {
+      "id": 35,
+      "page": 4,
+      "segments": [
+        {
+          "type": "text",
+          "content": "若已知某串联校正装置的传递函数为 ，则它是一种（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q35_f_33.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "相位滞后校正"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "相位超前校正"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "相位滞后—超前校正"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "反馈校正"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 36,
+      "page": 4,
+      "segments": [
+        {
+          "type": "text",
+          "content": "已知系统开环传递函数 ，则与虚轴交点处的K*=（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q36_f_34.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "0"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "2"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "4"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "6"
+          }
+        ]
+      },
+      "answer": "D"
+    },
+    {
+      "id": 37,
+      "page": 4,
+      "segments": [
+        {
+          "type": "text",
+          "content": "某系统的传递函数是 ，则该可看成由（　）环节串联而成。"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q37_f_35.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "比例、延时"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "惯性、导前"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "惯性、延时"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "惯性、比例"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 38,
+      "page": 4,
+      "segments": [
+        {
+          "type": "text",
+          "content": "设一阶系统的传递函数是() ，且容许误差为2%，则其调整时间为（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q38_f_36.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "1"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "1.5"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "2"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "3"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 39,
+      "page": 4,
+      "segments": [
+        {
+          "type": "text",
+          "content": "根据系统的特征方程() ，可以判断系统为（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "稳定"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "不稳定"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "临界稳定"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "稳定性不确定"
+          }
+        ]
+      },
+      "answer": "B"
+    },
+    {
+      "id": 40,
+      "page": 4,
+      "segments": [
+        {
+          "type": "text",
+          "content": "某反馈系统的开环传递函数为：() ，当（　）时，闭环系统稳定。"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q40_f_38.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "2 1 \\tau  T"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "2 1 \\tau  T"
+          }
+        ],
+        "C": [
+          {
+            "type": "image",
+            "src": "formulas/q40_opt_C_39.png",
+            "alt": "选项C"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "任意T1 和\\tau2"
+          }
+        ]
+      },
+      "answer": "B"
+    },
+    {
+      "id": 41,
+      "page": 4,
+      "segments": [
+        {
+          "type": "text",
+          "content": "当输入为单位斜坡且系统为单位反馈时，对于II 型系统其稳态误差为（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "0"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "0.1/k"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "1/k"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "\\infty"
+          }
+        ]
+      },
+      "answer": "A"
+    },
+    {
+      "id": 42,
+      "page": 4,
+      "segments": [
+        {
+          "type": "text",
+          "content": "根轨迹渐近线的交点公式为（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "image",
+            "src": "formulas/q42_opt_A_40.png",
+            "alt": "选项A"
+          }
+        ],
+        "B": [
+          {
+            "type": "image",
+            "src": "formulas/q42_opt_B_41.png",
+            "alt": "选项B"
+          }
+        ],
+        "C": [
+          {
+            "type": "image",
+            "src": "formulas/q42_opt_C_42.png",
+            "alt": "选项C"
+          }
+        ],
+        "D": [
+          {
+            "type": "image",
+            "src": "formulas/q42_opt_D_43.png",
+            "alt": "选项D"
+          }
+        ]
+      },
+      "answer": "D"
+    },
+    {
+      "id": 43,
+      "page": 4,
+      "segments": [
+        {
+          "type": "text",
+          "content": "随动系统对（　）要求较高。"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "快速性"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "稳定性"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "准确性"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "振荡次数"
+          }
+        ]
+      },
+      "answer": "A"
+    },
+    {
+      "id": 44,
+      "page": 5,
+      "segments": [
+        {
+          "type": "text",
+          "content": "某环节的传递函数为 ，它的对数幅频率特性L()随K 值增加而（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q44_f_44.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "上移"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "下移"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "左移"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "右移"
+          }
+        ]
+      },
+      "answer": "A"
+    },
+    {
+      "id": 45,
+      "page": 5,
+      "segments": [
+        {
+          "type": "text",
+          "content": "设积分环节的传递函数为 ，则其频率特性幅值A()=（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q45_f_45.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": " K"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "2  K"
+          }
+        ],
+        "C": [
+          {
+            "type": "image",
+            "src": "formulas/q45_opt_C_46.png",
+            "alt": "选项C"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "2 1 "
+          }
+        ]
+      },
+      "answer": "A"
+    },
+    {
+      "id": 46,
+      "page": 5,
+      "segments": [
+        {
+          "type": "text",
+          "content": "二阶系统的传递函数() ，其阻尼比\\zeta 是（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q46_f_47.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "0.5"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "1"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "2"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "4"
+          }
+        ]
+      },
+      "answer": "A"
+    },
+    {
+      "id": 47,
+      "page": 5,
+      "segments": [
+        {
+          "type": "text",
+          "content": "系统稳定的充分必要条件是其特征方程式的所有根均在根平面的（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "右半部分"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "左半部分"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "实轴上"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "虚轴上"
+          }
+        ]
+      },
+      "answer": "B"
+    },
+    {
+      "id": 48,
+      "page": 5,
+      "segments": [
+        {
+          "type": "text",
+          "content": "一闭环系统的开环传递函数为 ，则该系统为（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q48_f_48.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "0 型系统，开环放大系数K 为2"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "I 型系统，开环放大系数K 为2"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "I 型系统，开环放大系数K 为1"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "0 型系统，开环放大系数K 为1"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 49,
+      "page": 5,
+      "segments": [
+        {
+          "type": "text",
+          "content": "实轴上分离点的分离角恒为（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "45"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "60"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "90"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "120"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 50,
+      "page": 5,
+      "segments": [
+        {
+          "type": "text",
+          "content": "系统特征方程为 ，则系统 （　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "稳定；"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "单位阶跃响应曲线为单调指数上升；"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "临界稳定；"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "右半平面闭环极点数 2 = Z 。"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 51,
+      "page": 5,
+      "segments": [
+        {
+          "type": "text",
+          "content": "系统的开环传递函数为 ，则实轴上的根轨迹为（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q51_f_50.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "[-2，-1] 和 [0，\\infty）"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "（-\\infty，-2] 和 [-1，0]"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "[0，1] 和 [2，\\infty）"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "（-\\infty，0] 和 [1，2]"
+          }
+        ]
+      },
+      "answer": "B"
+    },
+    {
+      "id": 52,
+      "page": 5,
+      "segments": [
+        {
+          "type": "text",
+          "content": "若系统的开环传递函数为 ，则它的开环增益为（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q52_f_51.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "image",
+            "src": "formulas/q52_opt_A_52.png",
+            "alt": "选项A"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "2"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "1"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "5"
+          }
+        ]
+      },
+      "answer": "D"
+    },
+    {
+      "id": 53,
+      "page": 5,
+      "segments": [
+        {
+          "type": "text",
+          "content": "比例环节的频率特性相位移()="
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "0$^\\circ$"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "-90$^\\circ$"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "90$^\\circ$"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "-180$^\\circ$"
+          }
+        ]
+      },
+      "answer": "A"
+    },
+    {
+      "id": 54,
+      "page": 6,
+      "segments": [
+        {
+          "type": "text",
+          "content": "已知系统的微分方程为 ，则系统的传递函数是（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "image",
+            "src": "formulas/q54_opt_A_55.png",
+            "alt": "选项A"
+          }
+        ],
+        "B": [
+          {
+            "type": "image",
+            "src": "formulas/q54_opt_B_56.png",
+            "alt": "选项B"
+          }
+        ],
+        "C": [
+          {
+            "type": "image",
+            "src": "formulas/q54_opt_C_57.png",
+            "alt": "选项C"
+          }
+        ],
+        "D": [
+          {
+            "type": "image",
+            "src": "formulas/q54_opt_D_58.png",
+            "alt": "选项D"
+          }
+        ]
+      },
+      "answer": "A"
+    },
+    {
+      "id": 55,
+      "page": 6,
+      "segments": [
+        {
+          "type": "text",
+          "content": "一阶惯性系统 的转折频率指"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q55_f_59.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "2"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "1"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "0.5"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "0"
+          }
+        ]
+      },
+      "answer": "A"
+    },
+    {
+      "id": 56,
+      "page": 6,
+      "segments": [
+        {
+          "type": "text",
+          "content": "设单位负反馈控制系统的开环传递函数 ，其中K>0，a>0，则闭环控制 系统的稳定性与（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q56_f_60.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "K 值的大小有关"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "a 值的大小有关"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "a 和K 值的大小无关"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "a 和K 值的大小有关"
+          }
+        ]
+      },
+      "answer": "A"
+    },
+    {
+      "id": 57,
+      "page": 6,
+      "segments": [
+        {
+          "type": "text",
+          "content": "系统特征方程式的所有根均在根平面的左半部分是系统稳定的（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "充分条件"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "必要条件"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "充分必要条件"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "以上都不是"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 58,
+      "page": 6,
+      "segments": [
+        {
+          "type": "text",
+          "content": "根轨迹上的点应满足的幅角条件为"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "-1"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "1"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "$\\pm$(2k+1)π/2 (k=0,1,2,…)"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "$\\pm$(2k+1)π(k=0,1,2,…)"
+          }
+        ]
+      },
+      "answer": "D"
+    },
+    {
+      "id": 59,
+      "page": 6,
+      "segments": [
+        {
+          "type": "text",
+          "content": "主导极点的特点是（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "距离虚轴很近"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "距离实轴很近"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "距离虚轴很远"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "距离实轴很远"
+          }
+        ]
+      },
+      "answer": "A"
+    },
+    {
+      "id": 60,
+      "page": 6,
+      "segments": [
+        {
+          "type": "text",
+          "content": "已知开环幅频特性如图2 所示， 则图中不稳定的系统是（　）。 系统① 系统② 系统③"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q60_f_64.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "系统①"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "系统②"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "系统③"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "都不稳定"
+          }
+        ]
+      },
+      "answer": "B"
+    },
+    {
+      "id": 61,
+      "page": 6,
+      "segments": [
+        {
+          "type": "text",
+          "content": "若某最小相位系统的相角裕度 ，则下列说法正确的是 （　）。"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "不稳定；"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "只有当幅值裕度 1 gk  时才稳定；"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "稳定；"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "不能判用相角裕度判断系统的稳定性。"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 62,
+      "page": 7,
+      "segments": [
+        {
+          "type": "text",
+          "content": "若某串联校正装置的传递函数为10 ，则该校正装置属于（　）。"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q62_f_66.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "超前校正"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "滞后校正"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "滞后-超前校正"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "不能判断"
+          }
+        ]
+      },
+      "answer": "B"
+    },
+    {
+      "id": 63,
+      "page": 7,
+      "segments": [
+        {
+          "type": "text",
+          "content": "下列哪种措施对改善系统的精度没有效果 （　）。"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "增加积分环节"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "提高系统的开环增益K"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "增加微分环节"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "引入扰动补偿"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 64,
+      "page": 7,
+      "segments": [
+        {
+          "type": "text",
+          "content": "已知系统的开环传递函数为 ，则该系统的开环增益为 （　）。"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q64_f_67.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "50"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "25"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "10"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "5"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 65,
+      "page": 7,
+      "segments": [
+        {
+          "type": "text",
+          "content": "若某系统的根轨迹有两个起点位于原点，则说明该系统（　） 。"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "含两个理想微分环节"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "含两个积分环节"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "位置误差系数为0"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "速度误差系数为0"
+          }
+        ]
+      },
+      "answer": "B"
+    },
+    {
+      "id": 66,
+      "page": 7,
+      "segments": [
+        {
+          "type": "text",
+          "content": "已知某些系统的开环传递函数如下，属于最小相位系统的是（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "image",
+            "src": "formulas/q66_opt_A_68.png",
+            "alt": "选项A"
+          }
+        ],
+        "B": [
+          {
+            "type": "image",
+            "src": "formulas/q66_opt_B_69.png",
+            "alt": "选项B"
+          }
+        ],
+        "C": [
+          {
+            "type": "image",
+            "src": "formulas/q66_opt_C_70.png",
+            "alt": "选项C"
+          }
+        ],
+        "D": [
+          {
+            "type": "image",
+            "src": "formulas/q66_opt_D_71.png",
+            "alt": "选项D"
+          }
+        ]
+      },
+      "answer": "B"
+    },
+    {
+      "id": 67,
+      "page": 7,
+      "segments": [
+        {
+          "type": "text",
+          "content": "开环对数幅频特性的低频段决定了系统的（　）。"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "稳态精度"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "稳定裕度"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "抗干扰性能"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "快速性"
+          }
+        ]
+      },
+      "answer": "A"
+    },
+    {
+      "id": 68,
+      "page": 7,
+      "segments": [
+        {
+          "type": "text",
+          "content": "若某负反馈控制系统的开环传递函数为 ，则该系统的闭环特征方程为 （　）。"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q68_f_72.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "image",
+            "src": "formulas/q68_opt_A_73.png",
+            "alt": "选项A"
+          }
+        ],
+        "B": [
+          {
+            "type": "image",
+            "src": "formulas/q68_opt_B_74.png",
+            "alt": "选项B"
+          }
+        ],
+        "C": [
+          {
+            "type": "image",
+            "src": "formulas/q68_opt_C_75.png",
+            "alt": "选项C"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "与是否为单位反馈系统有关"
+          }
+        ]
+      },
+      "answer": "B"
+    },
+    {
+      "id": 69,
+      "page": 7,
+      "segments": [
+        {
+          "type": "text",
+          "content": "已知单位反馈系统的开环传递函数为 ，当输入信号是 +时，系统的稳态误差是（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q69_f_76.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "0 ；"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "\\infty ；"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "10 ；"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "20"
+          }
+        ]
+      },
+      "answer": "D"
+    },
+    {
+      "id": 70,
+      "page": 7,
+      "segments": [
+        {
+          "type": "text",
+          "content": "设二阶微分环节$G(s)$=s2+2s+4，则其对数幅频特性的高频段渐近线斜率为（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "-40dB／dec"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "-20dB／"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "20dB／dec"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "40dB／"
+          }
+        ]
+      },
+      "answer": "D"
+    },
+    {
+      "id": 71,
+      "page": 8,
+      "segments": [
+        {
+          "type": "text",
+          "content": "描述RLC 电路的线性常系数微分方程的阶次是（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "零阶"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "一阶"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "二阶"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "三阶"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 72,
+      "page": 8,
+      "segments": [
+        {
+          "type": "text",
+          "content": "设单位负反馈系统的开环传递函数为G0(s)= ，则系统的特征方程为（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q72_f_77.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "image",
+            "src": "formulas/q72_opt_A_78.png",
+            "alt": "选项A"
+          }
+        ],
+        "B": [
+          {
+            "type": "image",
+            "src": "formulas/q72_opt_B_79.png",
+            "alt": "选项B"
+          }
+        ],
+        "C": [
+          {
+            "type": "image",
+            "src": "formulas/q72_opt_C_80.png",
+            "alt": "选项C"
+          }
+        ],
+        "D": [
+          {
+            "type": "image",
+            "src": "formulas/q72_opt_D_81.png",
+            "alt": "选项D"
+          }
+        ]
+      },
+      "answer": "D"
+    },
+    {
+      "id": 73,
+      "page": 8,
+      "segments": [
+        {
+          "type": "text",
+          "content": "某校正环节频率特性Gc（j）= 10 ，其对数幅频特性渐近线高频段斜率为（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q73_f_82.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "0dB／dec"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "-20dB／dec"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "-40dB／dec"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "-60dB／dec"
+          }
+        ]
+      },
+      "answer": "A"
+    },
+    {
+      "id": 74,
+      "page": 8,
+      "segments": [
+        {
+          "type": "text",
+          "content": "稳态位置误差系数Kρ 为（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": ")s( H )s( G 1 lim 0 s"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": ")s( H )s( sG lim 0 s"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": ")s( H )s( G s lim 2 0 s"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": ")s( H )s( G lim 0 s"
+          }
+        ]
+      },
+      "answer": "D"
+    },
+    {
+      "id": 75,
+      "page": 8,
+      "segments": [
+        {
+          "type": "text",
+          "content": "若系统存在临界稳定状态，则根轨迹必定与（　）相交"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "实轴"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "虚轴"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "渐近线"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "阻尼线"
+          }
+        ]
+      },
+      "answer": "B"
+    },
+    {
+      "id": 76,
+      "page": 8,
+      "segments": [
+        {
+          "type": "text",
+          "content": "下列开环传递函数中为最小相位传递函数的是（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "image",
+            "src": "formulas/q76_opt_A_83.png",
+            "alt": "选项A"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "2 s 1 -"
+          }
+        ],
+        "C": [
+          {
+            "type": "image",
+            "src": "formulas/q76_opt_C_84.png",
+            "alt": "选项C"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "10 s 1 -"
+          }
+        ]
+      },
+      "answer": "A"
+    },
+    {
+      "id": 77,
+      "page": 8,
+      "segments": [
+        {
+          "type": "text",
+          "content": "当二阶系统的阻尼比在0< <l 时，特征根为（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "一对实部为负的共轭复根"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "一对实部为正的共轭复根"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "一对共轭虚根"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "一对负的等根"
+          }
+        ]
+      },
+      "answer": "A"
+    },
+    {
+      "id": 78,
+      "page": 8,
+      "segments": [
+        {
+          "type": "text",
+          "content": "设系统的开环传递函数为$$G(s)$$H(s)$$ = ，其在根轨迹法中用到的开环放大系数"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q78_f_85.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "K／2"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "K"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "2K"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "4K"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 79,
+      "page": 8,
+      "segments": [
+        {
+          "type": "text",
+          "content": "设系统的$G(s)$= ，则系统的阻尼比为（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q79_f_86.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "25 1"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "5 1"
+          }
+        ],
+        "C": [
+          {
+            "type": "image",
+            "src": "formulas/q79_opt_C_87.png",
+            "alt": "选项C"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "1"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 80,
+      "page": 9,
+      "segments": [
+        {
+          "type": "text",
+          "content": "设某系统开环传递函数为$G(s)$= ，则其频率特性的奈氏图起点坐标为"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q80_f_88.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "(0，j10)"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "(1，j0)"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "(10，j0)"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "(0，j1)"
+          }
+        ]
+      },
+      "answer": "B"
+    },
+    {
+      "id": 81,
+      "page": 9,
+      "segments": [
+        {
+          "type": "text",
+          "content": "控制系统的最大超调量σp 反映了系统的（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "相对稳定性"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "绝对稳定性"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "快速性"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "稳态性能"
+          }
+        ]
+      },
+      "answer": "A"
+    },
+    {
+      "id": 82,
+      "page": 9,
+      "segments": [
+        {
+          "type": "text",
+          "content": "稳态加速度误差数Ka=（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "$$G(s)$$H(s)$$ lim 0 s"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "s$$G(s)$$H(s)$$ lim 0 s"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "$$G(s)$$H(s)$$ s lim 2 0 s"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "$$G(s)$$H(s)$$ 1 lim 0 s"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 83,
+      "page": 9,
+      "segments": [
+        {
+          "type": "text",
+          "content": "下列开环传递函数中为非最小相位传递函数的是（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "image",
+            "src": "formulas/q83_opt_A_93.png",
+            "alt": "选项A"
+          }
+        ],
+        "B": [
+          {
+            "type": "image",
+            "src": "formulas/q83_opt_B_94.png",
+            "alt": "选项B"
+          }
+        ],
+        "C": [
+          {
+            "type": "image",
+            "src": "formulas/q83_opt_C_95.png",
+            "alt": "选项C"
+          }
+        ],
+        "D": [
+          {
+            "type": "image",
+            "src": "formulas/q83_opt_D_96.png",
+            "alt": "选项D"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 84,
+      "page": 9,
+      "segments": [
+        {
+          "type": "text",
+          "content": "要求系统快速性好，则闭环极点应距（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "虚轴远"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "虚轴近"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "实轴近"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "实轴远"
+          }
+        ]
+      },
+      "answer": "A"
+    },
+    {
+      "id": 85,
+      "page": 9,
+      "segments": [
+        {
+          "type": "text",
+          "content": "设开环系统频率特性为 ，当频率从0 变化至\\infty时，其相角变 化范围为（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q85_f_97.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "0$^\\circ$～-180$^\\circ$"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "-90$^\\circ$~-180$^\\circ$"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "-90$^\\circ$～-270$^\\circ$"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "-90$^\\circ$～90$^\\circ$"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 86,
+      "page": 9,
+      "segments": [
+        {
+          "type": "text",
+          "content": "计算根轨迹渐近线的倾角的公式为（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "image",
+            "src": "formulas/q86_opt_A_98.png",
+            "alt": "选项A"
+          }
+        ],
+        "B": [
+          {
+            "type": "image",
+            "src": "formulas/q86_opt_B_99.png",
+            "alt": "选项B"
+          }
+        ],
+        "C": [
+          {
+            "type": "image",
+            "src": "formulas/q86_opt_C_100.png",
+            "alt": "选项C"
+          }
+        ],
+        "D": [
+          {
+            "type": "image",
+            "src": "formulas/q86_opt_D_101.png",
+            "alt": "选项D"
+          }
+        ]
+      },
+      "answer": "D"
+    },
+    {
+      "id": 87,
+      "page": 10,
+      "segments": [
+        {
+          "type": "text",
+          "content": "设二阶系统的 ，则系统的阻尼比\\omega和自然振荡频率"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q87_f_102.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "2 1 9 1 、"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "3 2 4 1 、"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "9 2 3 1、"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "4 1 2 1 、"
+          }
+        ]
+      },
+      "answer": "B"
+    },
+    {
+      "id": 88,
+      "page": 10,
+      "segments": [
+        {
+          "type": "text",
+          "content": "终值定理的数学表达式为（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": ") ( lim ) ( lim ) ( 0 s X t x x s t  \\infty  = = \\infty"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": ") ( lim ) ( lim ) ( s X t x x s t \\infty  \\infty  = = \\infty"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": ") ( lim ) ( lim ) ( 0 s sX t x x x t \\infty   = = \\infty"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": ") ( lim ) ( lim ) ( 0 s sX t x x s t  \\infty  = = \\infty"
+          }
+        ]
+      },
+      "answer": "D"
+    },
+    {
+      "id": 89,
+      "page": 10,
+      "segments": [
+        {
+          "type": "text",
+          "content": "梅森公式为（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "image",
+            "src": "formulas/q89_opt_A_107.png",
+            "alt": "选项A"
+          }
+        ],
+        "B": [
+          {
+            "type": "image",
+            "src": "formulas/q89_opt_B_108.png",
+            "alt": "选项B"
+          }
+        ],
+        "C": [
+          {
+            "type": "image",
+            "src": "formulas/q89_opt_C_109.png",
+            "alt": "选项C"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "   k k p 1"
+          }
+        ]
+      },
+      "answer": "B"
+    },
+    {
+      "id": 90,
+      "page": 10,
+      "segments": [
+        {
+          "type": "text",
+          "content": "方框图化简时，并联连接方框总的输出量为各方框输出量的（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "乘积"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "代数和"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "加权平均"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "平均值"
+          }
+        ]
+      },
+      "answer": "B"
+    },
+    {
+      "id": 91,
+      "page": 10,
+      "segments": [
+        {
+          "type": "text",
+          "content": "单位抛物线输入函数r(t)的数学表达式是r(t)＝（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "at2"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "2 1 Rt2"
+          }
+        ],
+        "C": [
+          {
+            "type": "image",
+            "src": "formulas/q91_opt_C_110.png",
+            "alt": "选项C"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "2 1 t2"
+          }
+        ]
+      },
+      "answer": "D"
+    },
+    {
+      "id": 92,
+      "page": 10,
+      "segments": [
+        {
+          "type": "text",
+          "content": "单位阶跃函数的拉氏变换是（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "3 1 s"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "2 1 s"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "s 1"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "1"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 93,
+      "page": 10,
+      "segments": [
+        {
+          "type": "text",
+          "content": "同一系统，不同输入信号和输出信号之间传递函数的特征方程（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "相同"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "不同"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "不存在"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "不定"
+          }
+        ]
+      },
+      "answer": "A"
+    },
+    {
+      "id": 94,
+      "page": 10,
+      "segments": [
+        {
+          "type": "text",
+          "content": "Ⅱ型系统对数幅频特性的低频段渐近线斜率为（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "－60dB／dec"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "－40dB／dec"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "－20dB／dec"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "0dB／dec"
+          }
+        ]
+      },
+      "answer": "B"
+    },
+    {
+      "id": 95,
+      "page": 10,
+      "segments": [
+        {
+          "type": "text",
+          "content": "惯性环节又称为（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "积分环节"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "微分环节"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "一阶滞后环节"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "振荡环节"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 96,
+      "page": 11,
+      "segments": [
+        {
+          "type": "text",
+          "content": "根轨迹终止于（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "闭环零点"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "闭环极点"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "开环零点"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "开环极点"
+          }
+        ]
+      },
+      "answer": "C"
+    },
+    {
+      "id": 97,
+      "page": 11,
+      "segments": [
+        {
+          "type": "text",
+          "content": "若某系统的传递函数为G（s）= ，则相应的频率特性G（j\\omega）为（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q97_f_111.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "image",
+            "src": "formulas/q97_opt_A_112.png",
+            "alt": "选项A"
+          }
+        ],
+        "B": [
+          {
+            "type": "image",
+            "src": "formulas/q97_opt_B_113.png",
+            "alt": "选项B"
+          }
+        ],
+        "C": [
+          {
+            "type": "image",
+            "src": "formulas/q97_opt_C_114.png",
+            "alt": "选项C"
+          }
+        ],
+        "D": [
+          {
+            "type": "image",
+            "src": "formulas/q97_opt_D_115.png",
+            "alt": "选项D"
+          }
+        ]
+      },
+      "answer": "D"
+    },
+    {
+      "id": 98,
+      "page": 11,
+      "segments": [
+        {
+          "type": "text",
+          "content": "已知\\alpha+j\\beta 是根轨迹上的一点，则必在根轨迹上的点是（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "-\\alpha+j\\beta"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "\\alpha-j\\beta"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "-\\alpha-j\\beta"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "\\beta+j\\alpha"
+          }
+        ]
+      },
+      "answer": "B"
+    },
+    {
+      "id": 99,
+      "page": 11,
+      "segments": [
+        {
+          "type": "text",
+          "content": "设某开环系统的传递函数为 ，其频率特性的相位移θ(\\omega)= （　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q99_f_118.png",
+          "alt": "公式"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "image",
+            "src": "formulas/q99_opt_A_119.png",
+            "alt": "选项A"
+          }
+        ],
+        "B": [
+          {
+            "type": "image",
+            "src": "formulas/q99_opt_B_120.png",
+            "alt": "选项B"
+          }
+        ],
+        "C": [
+          {
+            "type": "image",
+            "src": "formulas/q99_opt_C_121.png",
+            "alt": "选项C"
+          }
+        ],
+        "D": [
+          {
+            "type": "image",
+            "src": "formulas/q99_opt_D_122.png",
+            "alt": "选项D"
+          }
+        ]
+      },
+      "answer": "D"
+    },
+    {
+      "id": 100,
+      "page": 11,
+      "segments": [
+        {
+          "type": "text",
+          "content": "系统的根轨迹关于（　）"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "content": "虚轴对称"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "content": "原点对称"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "content": "实轴对称"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "content": "渐近线对称"
+          }
+        ]
+      },
+      "answer": "C"
+    }
+  ]
+}
