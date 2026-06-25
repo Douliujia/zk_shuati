@@ -232,17 +232,16 @@ main {
   display: block;
   width: auto;
   height: auto;
-  min-width: min(100%, 220px);
   max-width: 100%;
-  max-height: none;
+  max-height: 12rem;
   margin: 6px 0;
   cursor: zoom-in;
   border: 1px solid var(--border);
   border-radius: 6px;
-  padding: 8px;
+  padding: 6px;
   background: #fff;
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
+  object-fit: contain;
+  image-rendering: auto;
 }
 
 .option.selected {

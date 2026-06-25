@@ -282,11 +282,84 @@ def merge_bbox(rects: List[fitz.Rect]) -> fitz.Rect:
     )
 
 
-def crop_formula_image(page: fitz.Page, bbox: fitz.Rect, name: str) -> str:
+def answer_search_patterns(answer: str) -> List[str]:
+    a = answer.upper()
+    al = a.lower()
+    return [
+        f"({a})",
+        f"（{a}）",
+        f"({a}）",
+        f"（{a})",
+        f"( {a})",
+        f"（ {a}）",
+        f"( {a}）",
+        f"（ {a})",
+        f"({al})",
+        f"（{al}）",
+    ]
+
+
+def find_answer_hits(
+    page: fitz.Page, answer: Optional[str], bbox: Optional[fitz.Rect] = None
+) -> List[fitz.Rect]:
+    if not answer or answer == "?":
+        return []
+    hits: List[fitz.Rect] = []
+    for pat in answer_search_patterns(answer):
+        for h in page.search_for(pat):
+            if bbox is None or bbox.intersects(h):
+                hits.append(h)
+    return hits
+
+
+def shrink_bbox_before_answer(
+    page: fitz.Page, bbox: fitz.Rect, answer: Optional[str]
+) -> fitz.Rect:
+    hits = find_answer_hits(page, answer, bbox)
+    if not hits:
+        return bbox
+    cut = min(h.x0 for h in hits) - 5
+    if cut > bbox.x0 + 24:
+        return fitz.Rect(bbox.x0, bbox.y0, cut, bbox.y1)
+    return bbox
+
+
+def iter_span_rects(page: fitz.Page) -> List[Tuple[str, fitz.Rect]]:
+    items: List[Tuple[str, fitz.Rect]] = []
+    for block in page.get_text("dict")["blocks"]:
+        if block.get("type") != 0:
+            continue
+        for line in block["lines"]:
+            for span in line["spans"]:
+                text = span.get("text", "")
+                if text and text.strip():
+                    items.append((text, fitz.Rect(span["bbox"])))
+    return items
+
+
+def crop_formula_image(
+    page: fitz.Page, bbox: fitz.Rect, name: str, answer: Optional[str] = None
+) -> str:
     FORMULA_DIR.mkdir(parents=True, exist_ok=True)
     rel = f"formulas/{name}.png"
     clip = (bbox + CROP_PAD) & page.rect
-    pix = page.get_pixmap(matrix=CROP_MATRIX, clip=clip, alpha=False)
+    if answer and answer != "?":
+        clip = shrink_bbox_before_answer(page, clip, answer)
+
+    hits = find_answer_hits(page, answer, clip) if answer and answer != "?" else []
+    if hits:
+        src = fitz.open()
+        src.insert_pdf(page.parent, from_page=page.number, to_page=page.number)
+        wp = src[0]
+        for h in hits:
+            r = (h + (-3, -2, 3, 2)) & clip
+            if r.width > 1 and r.height > 1:
+                wp.add_redact_annot(r, fill=(1, 1, 1))
+        wp.apply_redactions(images=fitz.PDF_REDACT_IMAGE_PIXELS)
+        pix = wp.get_pixmap(matrix=CROP_MATRIX, clip=clip, alpha=False)
+        src.close()
+    else:
+        pix = page.get_pixmap(matrix=CROP_MATRIX, clip=clip, alpha=False)
     pix.save(str(FORMULA_DIR / f"{name}.png"))
     return rel
 
@@ -402,6 +475,78 @@ def find_options_block_y_range(
     return opt_start, opt_end
 
 
+def compute_option_bbox(
+    page: fitz.Page, label: str, markers: Dict[str, fitz.Rect]
+) -> Optional[fitz.Rect]:
+    """按 PDF 实际文字边界收紧选项截图，避免带入相邻选项。"""
+    if label not in markers:
+        return None
+    hit = markers[label]
+    order = list("ABCD")
+    idx = order.index(label)
+
+    x0_lim = hit.x0
+    x1_lim = page.rect.width - CONTENT_MARGIN
+    y0_lim = hit.y0 - 2
+    y1_lim = hit.y1 + 48
+
+    for next_lab in order[idx + 1 :]:
+        if next_lab in markers:
+            nr = markers[next_lab]
+            if abs(nr.y0 - hit.y0) < 14:
+                x1_lim = nr.x0 - 4
+                break
+
+    for prev_lab in order[:idx]:
+        if prev_lab in markers:
+            pr = markers[prev_lab]
+            if abs(pr.y0 - hit.y0) < 14:
+                x0_lim = max(x0_lim, pr.x1)
+
+    below = [
+        m
+        for lab, m in markers.items()
+        if lab != label and m.y0 > hit.y0 + 6 and abs(m.x0 - hit.x0) < 55
+    ]
+    if below:
+        y1_lim = min(y1_lim, min(m.y0 for m in below) - 3)
+
+    region = fitz.Rect(x0_lim - 6, y0_lim - 6, x1_lim + 6, y1_lim + 6)
+    label_pats = (f"{label}.", f"{label}．", f"{label}、")
+    content_rects: List[fitz.Rect] = []
+
+    for text, sb in iter_span_rects(page):
+        if not region.intersects(sb):
+            continue
+        stripped = text.strip()
+        if any(stripped.startswith(p) for p in label_pats) and sb.x0 <= hit.x1 + 6:
+            content_rects.append(sb)
+            continue
+        if (
+            sb.x0 >= hit.x0 - 3
+            and sb.y0 >= hit.y0 - 4
+            and sb.x1 <= x1_lim + 6
+            and sb.y0 < y1_lim + 2
+        ):
+            content_rects.append(sb)
+
+    if not content_rects:
+        return fitz.Rect(
+            max(CONTENT_MARGIN, hit.x0 - 4),
+            hit.y0 - 4,
+            x1_lim,
+            min(y1_lim, hit.y1 + 26),
+        )
+
+    merged = merge_bbox(content_rects)
+    return fitz.Rect(
+        max(CONTENT_MARGIN, merged.x0 - 3),
+        merged.y0 - 3,
+        min(x1_lim, merged.x1 + 4),
+        merged.y1 + 4,
+    )
+
+
 def crop_option_on_page(
     page: fitz.Page,
     label: str,
@@ -409,37 +554,8 @@ def crop_option_on_page(
     y_max: float,
     name: str,
 ) -> Optional[str]:
-    """按 PDF 原样截取单个选项（含公式）。"""
-    if label not in markers:
-        return None
-    hit = markers[label]
-    order = ["A", "B", "C", "D"]
-    idx = order.index(label)
-    x0 = max(CONTENT_MARGIN, hit.x0 - 4)
-    x1 = page.rect.width - CONTENT_MARGIN
-    y0 = hit.y0 - 4
-    y1 = hit.y1 + 26
-
-    for next_lab in order[idx + 1:]:
-        if next_lab not in markers:
-            continue
-        nr = markers[next_lab]
-        if abs(nr.y0 - hit.y0) < 14:
-            x1 = min(x1, nr.x0 - 4)
-        else:
-            y1 = min(y1, nr.y0 - 2)
-            break
-
-    below_col = [
-        m
-        for lab, m in markers.items()
-        if lab != label and m.y0 > hit.y0 + 8 and abs(m.x0 - hit.x0) < 50
-    ]
-    if below_col:
-        y1 = min(y1, min(m.y0 for m in below_col) - 2)
-
-    bbox = fitz.Rect(x0, y0, x1, y1)
-    if bbox.width < 10 or bbox.height < 8:
+    bbox = compute_option_bbox(page, label, markers)
+    if not bbox or bbox.width < 8 or bbox.height < 6:
         return None
     return crop_formula_image(page, bbox, name)
 
@@ -471,7 +587,13 @@ def find_math_lines_in_range(lines: List[dict], y0: float, y1: float) -> List[di
 
 
 def crop_stem_formula_image(
-    page: fitz.Page, lines: List[dict], y0: float, y1: float, qid: int, idx: int
+    page: fitz.Page,
+    lines: List[dict],
+    y0: float,
+    y1: float,
+    qid: int,
+    idx: int,
+    answer: Optional[str] = None,
 ) -> Optional[str]:
     math_lines = find_math_lines_in_range(lines, y0, y1)
     if not math_lines:
@@ -479,7 +601,7 @@ def crop_stem_formula_image(
     ty0 = min(ln["top"] for ln in math_lines)
     ty1 = max(ln["top"] + max(ln.get("size", 12) * 1.5, 18) for ln in math_lines)
     bbox = region_bbox(page, lines, ty0, ty1)
-    return crop_formula_image(page, bbox, f"q{qid}_f_{idx}")
+    return crop_formula_image(page, bbox, f"q{qid}_f_{idx}", answer=answer)
 
 
 def extract_formula_segments(
@@ -489,10 +611,12 @@ def extract_formula_segments(
     qid: int,
     counter: List[int],
     block: str,
+    answer: Optional[str] = None,
 ) -> Tuple[List[dict], Optional[str]]:
     """题干：纯文字用文本；含公式/图形时按行混排文字与公式截图。"""
     head = QUESTION_HEAD_RE.sub("", stem, count=1).strip()
     head, answer_from_head = extract_answer(head)
+    stem_answer = answer_from_head or answer
 
     y0, y1 = find_question_y_range(page, lines, qid, block)
     stem_lines = sorted(
@@ -525,7 +649,9 @@ def extract_formula_segments(
             ty0 = stem_lines[i]["top"]
             ty1 = stem_lines[j - 1]["top"] + max(stem_lines[j - 1].get("size", 12) * 1.5, 18)
             counter[0] += 1
-            rel = crop_stem_formula_image(page, lines, ty0, ty1, qid, counter[0])
+            rel = crop_stem_formula_image(
+                page, lines, ty0, ty1, qid, counter[0], answer=stem_answer
+            )
             if rel:
                 segments.append({"type": "image", "src": rel, "alt": "公式"})
             i = j
@@ -604,7 +730,9 @@ def main() -> int:
         page = doc[page_idx]
         lines = page_lines[page_idx]
 
-        segments, ans2 = extract_formula_segments(page, lines, stem, qid, img_counter, block)
+        segments, ans2 = extract_formula_segments(
+            page, lines, stem, qid, img_counter, block, answer=answer
+        )
         if not answer:
             answer = ans2
 
