@@ -1,6 +1,6 @@
 const STORAGE_KEY = "zk_quiz_state_v1";
 
-/** 本地开发 app/ 用 ../data；Gitee Pages 部署到 docs/ 根目录用 data */
+/** 本地开发 app/ 用 ../data；GitHub Pages 部署到 docs/ 根目录用 data */
 const DATA_BASE = (() => {
   const p = location.pathname.replace(/\\/g, "/");
   return /\/app(?:\/|$)/.test(p) ? "../data" : "data";
@@ -400,5 +400,5 @@ async function init() {
 }
 
 init().catch((err) => {
-  els.qBody.textContent = `加载失败：${err.message}。本地请运行 python scripts/serve.py；在线部署请确认已执行 python scripts/deploy_gitee.py 并开启 Gitee Pages。`;
+  els.qBody.textContent = `加载失败：${err.message}。本地请运行 python scripts/serve.py；在线部署请确认已执行 python scripts/deploy_pages.py 并开启 GitHub Pages。`;
 });

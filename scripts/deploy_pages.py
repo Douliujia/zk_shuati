@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""生成 Gitee Pages 静态站点到 docs/ 目录。"""
+"""生成 GitHub Pages 静态站点到 docs/ 目录。"""
 
 from __future__ import annotations
 
@@ -28,17 +28,18 @@ def main() -> int:
         shutil.copy2(APP_DIR / name, DOCS_DIR / name)
 
     shutil.copytree(DATA_DIR, DOCS_DIR / "data")
+    (DOCS_DIR / ".nojekyll").touch()
 
     formula_count = len(list((DOCS_DIR / "data" / "formulas").glob("*.png")))
-    print(f"已生成 Gitee Pages 站点 -> {DOCS_DIR}")
+    print(f"已生成 GitHub Pages 站点 -> {DOCS_DIR}")
     print(f"  页面: index.html, style.css, app.js")
     print(f"  题库: questions.json, 公式图 {formula_count} 张")
     print()
     print("下一步：")
-    print("  1. git add docs && git commit -m \"deploy: update gitee pages\"")
-    print("  2. git push（推送到 Gitee 仓库）")
-    print("  3. Gitee 仓库 → 服务 → Gitee Pages → 部署分支选 master/main，目录选 /docs")
-    print("  4. 部署完成后访问：https://<用户名>.gitee.io/<仓库名>/")
+    print("  1. git add docs && git commit -m \"deploy: update github pages\"")
+    print("  2. git push（推送到 GitHub 仓库）")
+    print("  3. GitHub 仓库 → Settings → Pages → Branch 选 main，Folder 选 /docs")
+    print("  4. 部署完成后访问：https://<用户名>.github.io/<仓库名>/")
     return 0
 
 
