@@ -66,9 +66,10 @@ function persistWrongSet() {
   );
 }
 
-function enrichMathText(text) {
+def enrichMathText(text) {
   if (!text) return "";
-  if (text.includes("$")) return text;
+  // 已含 $ 或主要为 Unicode 符号/中文时直接显示
+  if (text.includes("$") || /[\u4e00-\u9fffωζαβγτΔ∠∞±]/.test(text)) return text;
   return text
     .replace(/\\([a-zA-Z]+(?:_\{?[a-zA-Z0-9]+\}?)?)/g, "\\($1\\)")
     .replace(/\+\\\(infty\\\)/g, "\\(+\\infty\\)");

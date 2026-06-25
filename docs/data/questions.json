@@ -8,38 +8,33 @@
       "page": 1,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q1_stem_1.png",
-          "alt": "第1题"
+          "type": "text",
+          "content": "惯性环节和积分环节的频率特性在（　）上相等。"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q1_opt_A_2.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "幅频特性的斜率"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q1_opt_B_3.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "最小幅值"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q1_opt_C_4.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "相位变化率"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q1_opt_D_5.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "穿越频率"
           }
         ]
       },
@@ -50,38 +45,33 @@
       "page": 1,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q2_stem_6.png",
-          "alt": "第2题"
+          "type": "text",
+          "content": "ω 从0 变化到+∞时，延迟环节频率特性极坐标图为（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q2_opt_A_7.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "圆"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q2_opt_B_8.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "半圆"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q2_opt_C_9.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "椭圆"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q2_opt_D_10.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "双曲线"
           }
         ]
       },
@@ -92,38 +82,38 @@
       "page": 1,
       "segments": [
         {
+          "type": "text",
+          "content": "若系统的开环传递函数为，则它的开环增益为（　）"
+        },
+        {
           "type": "image",
-          "src": "formulas/q3_stem_11.png",
-          "alt": "第3题"
+          "src": "formulas/q3_f_1.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q3_opt_A_12.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "1"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q3_opt_B_13.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "2"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q3_opt_C_14.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "5"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q3_opt_D_15.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "10"
           }
         ]
       },
@@ -135,37 +125,42 @@
       "segments": [
         {
           "type": "image",
-          "src": "formulas/q4_stem_16.png",
-          "alt": "第4题"
+          "src": "formulas/q4_f_2.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "4.二阶系统的传递函数，则该系统是（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q4_f_3.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q4_opt_A_17.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "临界阻尼系统"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q4_opt_B_18.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "欠阻尼系统"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q4_opt_C_19.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "过阻尼系统"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q4_opt_D_20.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "零阻尼系统"
           }
         ]
       },
@@ -176,38 +171,33 @@
       "page": 1,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q5_stem_21.png",
-          "alt": "第5题"
+          "type": "text",
+          "content": "若保持二阶系统的ζ 不变，提高ωₙ，则可以（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q5_opt_A_22.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "提高上升时间和峰值时间"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q5_opt_B_23.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "减少上升时间和峰值时间"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q5_opt_C_24.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "提高上升时间和调整时间"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q5_opt_D_25.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "减少上升时间和超调量"
           }
         ]
       },
@@ -219,36 +209,38 @@
       "segments": [
         {
           "type": "image",
-          "src": "formulas/q6_stem_26.png",
-          "alt": "第6题"
+          "src": "formulas/q6_f_4.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "6.一阶微分环节，当频率时，则相频特性为（　） T"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q6_opt_A_27.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "45°"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q6_opt_B_28.png",
+            "src": "formulas/q6_opt_B_5.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q6_opt_C_29.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "90°"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q6_opt_D_30.png",
+            "src": "formulas/q6_opt_D_6.png",
             "alt": "选项D"
           }
         ]
@@ -260,38 +252,33 @@
       "page": 1,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q7_stem_31.png",
-          "alt": "第7题"
+          "type": "text",
+          "content": "最小相位系统的开环增益越大，其（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q7_opt_A_32.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "振荡次数越多"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q7_opt_B_33.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "稳定裕量越大"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q7_opt_C_34.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "相位变化越小"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q7_opt_D_35.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "稳态误差越小"
           }
         ]
       },
@@ -303,37 +290,42 @@
       "segments": [
         {
           "type": "image",
-          "src": "formulas/q8_stem_36.png",
-          "alt": "第8题"
+          "src": "formulas/q8_f_7.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "8.设系统的特征方程为，则此系统（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q8_f_8.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q8_opt_A_37.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "稳定"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q8_opt_B_38.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "临界稳定"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q8_opt_C_39.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "不稳定"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q8_opt_D_40.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "稳定性不确定。"
           }
         ]
       },
@@ -344,38 +336,42 @@
       "page": 1,
       "segments": [
         {
+          "type": "text",
+          "content": "某单位反馈系统的开环传递函数为：()，当k=（　）时，闭环系统"
+        },
+        {
           "type": "image",
-          "src": "formulas/q9_stem_41.png",
-          "alt": "第9题"
+          "src": "formulas/q9_f_9.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "临界稳定。"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q9_opt_A_42.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "10"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q9_opt_B_43.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "20"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q9_opt_C_44.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "30"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q9_opt_D_45.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "40"
           }
         ]
       },
@@ -386,38 +382,42 @@
       "page": 1,
       "segments": [
         {
+          "type": "text",
+          "content": "设系统的特征方程为()，则此系统中包含正实部特征的个数"
+        },
+        {
           "type": "image",
-          "src": "formulas/q10_stem_46.png",
-          "alt": "第10题"
+          "src": "formulas/q10_f_10.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "有（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q10_opt_A_47.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "0"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q10_opt_B_48.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "1"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q10_opt_C_49.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "2"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q10_opt_D_50.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "3"
           }
         ]
       },
@@ -429,37 +429,46 @@
       "segments": [
         {
           "type": "image",
-          "src": "formulas/q11_stem_51.png",
-          "alt": "第11题"
+          "src": "formulas/q11_f_11.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "11.单位反馈系统开环传递函数为，当输入为单位阶跃时，则其位置误差"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q11_f_12.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "为（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q11_opt_A_52.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "2"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q11_opt_B_53.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "0.2"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q11_opt_C_54.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "0.5"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q11_opt_D_55.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "0.05"
           }
         ]
       },
@@ -471,37 +480,42 @@
       "segments": [
         {
           "type": "image",
-          "src": "formulas/q12_stem_56.png",
-          "alt": "第12题"
+          "src": "formulas/q12_f_13.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "12.若已知某串联校正装置的传递函数为，则它是一种（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q12_f_14.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q12_opt_A_57.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "反馈校正"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q12_opt_B_58.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "相位超前校正"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q12_opt_C_59.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "相位滞后—超前校正"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q12_opt_D_60.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "相位滞后校正"
           }
         ]
       },
@@ -512,37 +526,36 @@
       "page": 2,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q13_stem_61.png",
-          "alt": "第13题"
+          "type": "text",
+          "content": "稳态误差ess 与误差信号E(s)的函数关系为（　）"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q13_opt_A_62.png",
+            "src": "formulas/q13_opt_A_15.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q13_opt_B_63.png",
+            "src": "formulas/q13_opt_B_16.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q13_opt_C_64.png",
+            "src": "formulas/q13_opt_C_17.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q13_opt_D_65.png",
+            "src": "formulas/q13_opt_D_18.png",
             "alt": "选项D"
           }
         ]
@@ -554,38 +567,33 @@
       "page": 2,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q14_stem_66.png",
-          "alt": "第14题"
+          "type": "text",
+          "content": "相位超前校正装置的奈氏曲线为（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q14_opt_A_67.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "圆"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q14_opt_B_68.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "上半圆"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q14_opt_C_69.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "下半圆"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q14_opt_D_70.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "45°弧线"
           }
         ]
       },
@@ -596,37 +604,41 @@
       "page": 2,
       "segments": [
         {
+          "type": "text",
+          "content": "开环传递函数为G(s)H(s)=,则实轴上的根轨迹为（　）"
+        },
+        {
           "type": "image",
-          "src": "formulas/q15_stem_71.png",
-          "alt": "第15题"
+          "src": "formulas/q15_f_19.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q15_opt_A_72.png",
+            "src": "formulas/q15_opt_A_20.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q15_opt_B_73.png",
+            "src": "formulas/q15_opt_B_21.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q15_opt_C_74.png",
+            "src": "formulas/q15_opt_C_22.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q15_opt_D_75.png",
+            "src": "formulas/q15_opt_D_23.png",
             "alt": "选项D"
           }
         ]
@@ -638,38 +650,38 @@
       "page": 2,
       "segments": [
         {
+          "type": "text",
+          "content": "某典型环节的传递函数是()，则该环节是（　）"
+        },
+        {
           "type": "image",
-          "src": "formulas/q16_stem_76.png",
-          "alt": "第16题"
+          "src": "formulas/q16_f_24.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q16_opt_A_77.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "比例环节"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q16_opt_B_78.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "积分环节"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q16_opt_C_79.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "惯性环节"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q16_opt_D_80.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "微分环节"
           }
         ]
       },
@@ -680,37 +692,41 @@
       "page": 2,
       "segments": [
         {
+          "type": "text",
+          "content": " 17.已知系统的微分方程为，则系统的传递函数是（　）"
+        },
+        {
           "type": "image",
-          "src": "formulas/q17_stem_81.png",
-          "alt": "第17题"
+          "src": "formulas/q17_f_25.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q17_opt_A_82.png",
+            "src": "formulas/q17_opt_A_26.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q17_opt_B_83.png",
+            "src": "formulas/q17_opt_B_27.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q17_opt_C_84.png",
+            "src": "formulas/q17_opt_C_28.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q17_opt_D_85.png",
+            "src": "formulas/q17_opt_D_29.png",
             "alt": "选项D"
           }
         ]
@@ -722,38 +738,33 @@
       "page": 2,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q18_stem_86.png",
-          "alt": "第18题"
+          "type": "text",
+          "content": "引出点前移越过一个方块图单元时，应在引出线支路上（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q18_opt_A_87.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "并联越过的方块图单元"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q18_opt_B_88.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "并联越过的方块图单元的倒数"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q18_opt_C_89.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "串联越过的方块图单元"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q18_opt_D_90.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "串联越过的方块图单元的倒数"
           }
         ]
       },
@@ -764,38 +775,33 @@
       "page": 2,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q19_stem_91.png",
-          "alt": "第19题"
+          "type": "text",
+          "content": "如果被调量随着给定量的变化而变化，这种控制系统叫（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q19_opt_A_92.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "恒值调节系统"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q19_opt_B_93.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "随动系统"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q19_opt_C_94.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "连续控制系统"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q19_opt_D_95.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "数字控制系统"
           }
         ]
       },
@@ -807,37 +813,42 @@
       "segments": [
         {
           "type": "image",
-          "src": "formulas/q20_stem_96.png",
-          "alt": "第20题"
+          "src": "formulas/q20_f_30.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "20.系统特征方程为()，此系统中包含正实部特征根个数为（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q20_f_31.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q20_opt_A_97.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "0"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q20_opt_B_98.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "1"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q20_opt_C_99.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "2"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q20_opt_D_100.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "3"
           }
         ]
       },
@@ -848,37 +859,36 @@
       "page": 2,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q21_stem_101.png",
-          "alt": "第21题"
+          "type": "text",
+          "content": "一般为使系统有较好的稳定性,希望相位裕量为（　）"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q21_opt_A_102.png",
+            "src": "formulas/q21_opt_A_32.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q21_opt_B_103.png",
+            "src": "formulas/q21_opt_B_33.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q21_opt_C_104.png",
+            "src": "formulas/q21_opt_C_34.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q21_opt_D_105.png",
+            "src": "formulas/q21_opt_D_35.png",
             "alt": "选项D"
           }
         ]
@@ -891,37 +901,42 @@
       "segments": [
         {
           "type": "image",
-          "src": "formulas/q22_stem_106.png",
-          "alt": "第22题"
+          "src": "formulas/q22_f_36.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "22.设一阶系统的传递函数是()，且容许误差为5%，则其调整时间为（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q22_f_37.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q22_opt_A_107.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "1"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q22_opt_B_108.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "2"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q22_opt_C_109.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "3"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q22_opt_D_110.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "4"
           }
         ]
       },
@@ -932,37 +947,45 @@
       "page": 3,
       "segments": [
         {
+          "type": "text",
+          "content": "某一系统的速度误差为零，则该系统的开环传递函数可能是（　）"
+        },
+        {
           "type": "image",
-          "src": "formulas/q23_stem_111.png",
-          "alt": "第23题"
+          "src": "formulas/q23_f_38.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "K K K"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q23_opt_A_112.png",
+            "src": "formulas/q23_opt_A_39.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q23_opt_B_113.png",
+            "src": "formulas/q23_opt_B_40.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q23_opt_C_114.png",
+            "src": "formulas/q23_opt_C_41.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q23_opt_D_115.png",
+            "src": "formulas/q23_opt_D_42.png",
             "alt": "选项D"
           }
         ]
@@ -975,37 +998,46 @@
       "segments": [
         {
           "type": "image",
-          "src": "formulas/q24_stem_116.png",
-          "alt": "第24题"
+          "src": "formulas/q24_f_43.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "24.单位反馈系统开环传递函数为，当输入为单位斜坡时，其加速度"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q24_f_44.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "误差为（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q24_opt_A_117.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "0"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q24_opt_B_118.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "0.25"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q24_opt_C_119.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "4"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q24_opt_D_120.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "∞"
           }
         ]
       },
@@ -1017,37 +1049,37 @@
       "segments": [
         {
           "type": "image",
-          "src": "formulas/q25_stem_121.png",
-          "alt": "第25题"
+          "src": "formulas/q25_f_45.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "25.若已知某串联校正装置的传递函数为，则它是一种（　） 11.0+s"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q25_opt_A_122.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "相位超前校正"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q25_opt_B_123.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "相位滞后校正"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q25_opt_C_124.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "相位滞后—超前校正"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q25_opt_D_125.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "反馈校正"
           }
         ]
       },
@@ -1059,36 +1091,45 @@
       "segments": [
         {
           "type": "image",
-          "src": "formulas/q26_stem_126.png",
-          "alt": "第26题"
+          "src": "formulas/q26_f_46.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "26.某校正环节传递函数，则其频率特性的奈氏图终点坐标为（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q26_f_47.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q26_opt_A_127.png",
+            "src": "formulas/q26_opt_A_48.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q26_opt_B_128.png",
+            "src": "formulas/q26_opt_B_49.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q26_opt_C_129.png",
+            "src": "formulas/q26_opt_C_50.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q26_opt_D_130.png",
+            "src": "formulas/q26_opt_D_51.png",
             "alt": "选项D"
           }
         ]
@@ -1100,38 +1141,33 @@
       "page": 3,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q27_stem_131.png",
-          "alt": "第27题"
+          "type": "text",
+          "content": "A、B 是高阶系统的二个极点，一般当极点A 距离虚轴比极点B 距离虚轴大于（　）时，\n分析系统时可忽略极点A。"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q27_opt_A_132.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "5 倍"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q27_opt_B_133.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "4 倍"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q27_opt_C_134.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "3 倍"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q27_opt_D_135.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "2 倍"
           }
         ]
       },
@@ -1143,37 +1179,42 @@
       "segments": [
         {
           "type": "image",
-          "src": "formulas/q28_stem_136.png",
-          "alt": "第28题"
+          "src": "formulas/q28_f_52.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "28.某典型环节的传递函数是()，则该环节是（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q28_f_53.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q28_opt_A_137.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "比例环节"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q28_opt_B_138.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "惯性环节"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q28_opt_C_139.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "积分环节"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q28_opt_D_140.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "微分环节"
           }
         ]
       },
@@ -1184,37 +1225,36 @@
       "page": 3,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q29_stem_141.png",
-          "alt": "第29题"
+          "type": "text",
+          "content": "0tty= 29.已知系统的单位脉冲响应函数是()，则系统的传递函数是（　） 1.01.0 2.02.0"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q29_opt_A_142.png",
+            "src": "formulas/q29_opt_A_54.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q29_opt_B_143.png",
+            "src": "formulas/q29_opt_B_55.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q29_opt_C_144.png",
+            "src": "formulas/q29_opt_C_56.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q29_opt_D_145.png",
+            "src": "formulas/q29_opt_D_57.png",
             "alt": "选项D"
           }
         ]
@@ -1226,38 +1266,33 @@
       "page": 3,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q30_stem_146.png",
-          "alt": "第30题"
+          "type": "text",
+          "content": "梅逊公式主要用来（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q30_opt_A_147.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "判断稳定性"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q30_opt_B_148.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "计算输入误差"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q30_opt_C_149.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "求系统的传递函数"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q30_opt_D_150.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "求系统的根轨迹"
           }
         ]
       },
@@ -1268,38 +1303,33 @@
       "page": 3,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q31_stem_151.png",
-          "alt": "第31题"
+          "type": "text",
+          "content": "已知二阶系统单位阶跃响应曲线呈现出等幅振荡，则其阻尼比可能为（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q31_opt_A_152.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "0.6"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q31_opt_B_153.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "0.707"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q31_opt_C_154.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "0"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q31_opt_D_155.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "1"
           }
         ]
       },
@@ -1310,38 +1340,33 @@
       "page": 3,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q32_stem_156.png",
-          "alt": "第32题"
+          "type": "text",
+          "content": "若系统的传递函数在右半S 平面上没有零点和极点，则该系统称作（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q32_opt_A_157.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "非最小相位系统"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q32_opt_B_158.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "最小相位系统"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q32_opt_C_159.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "不稳定系统"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q32_opt_D_160.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "振荡系统"
           }
         ]
       },
@@ -1352,38 +1377,42 @@
       "page": 3,
       "segments": [
         {
+          "type": "text",
+          "content": "某系统的闭环传递函数为：，当k=（　）时，闭环系统临"
+        },
+        {
           "type": "image",
-          "src": "formulas/q33_stem_161.png",
-          "alt": "第33题"
+          "src": "formulas/q33_f_58.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "界稳定。"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q33_opt_A_162.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "2"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q33_opt_B_163.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "4"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q33_opt_C_164.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "6"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q33_opt_D_165.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "8"
           }
         ]
       },
@@ -1395,36 +1424,43 @@
       "segments": [
         {
           "type": "image",
-          "src": "formulas/q34_stem_166.png",
-          "alt": "第34题"
+          "src": "formulas/q34_f_59.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "34.系统的传递函数，其系统的增益和型次为（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q34_f_60.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q34_opt_A_167.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "5，2"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q34_opt_B_168.png",
+            "src": "formulas/q34_opt_B_61.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q34_opt_C_169.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "5，4"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q34_opt_D_170.png",
+            "src": "formulas/q34_opt_D_62.png",
             "alt": "选项D"
           }
         ]
@@ -1437,37 +1473,37 @@
       "segments": [
         {
           "type": "image",
-          "src": "formulas/q35_stem_171.png",
-          "alt": "第35题"
+          "src": "formulas/q35_f_63.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "35.若已知某串联校正装置的传递函数为，则它是一种（　） 12.0110++ss"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q35_opt_A_172.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "相位滞后校正"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q35_opt_B_173.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "相位超前校正"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q35_opt_C_174.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "相位滞后—超前校正"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q35_opt_D_175.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "反馈校正"
           }
         ]
       },
@@ -1478,38 +1514,38 @@
       "page": 4,
       "segments": [
         {
+          "type": "text",
+          "content": "已知系统开环传递函数，则与虚轴交点处的K*=（　）"
+        },
+        {
           "type": "image",
-          "src": "formulas/q36_stem_176.png",
-          "alt": "第36题"
+          "src": "formulas/q36_f_64.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q36_opt_A_177.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "0"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q36_opt_B_178.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "2"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q36_opt_C_179.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "4"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q36_opt_D_180.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "6"
           }
         ]
       },
@@ -1521,37 +1557,42 @@
       "segments": [
         {
           "type": "image",
-          "src": "formulas/q37_stem_181.png",
-          "alt": "第37题"
+          "src": "formulas/q37_f_65.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "37.某系统的传递函数是，则该可看成由（　）环节串联而成。"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q37_f_66.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q37_opt_A_182.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "比例、延时"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q37_opt_B_183.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "惯性、导前"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q37_opt_C_184.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "惯性、延时"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q37_opt_D_185.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "惯性、比例"
           }
         ]
       },
@@ -1563,37 +1604,42 @@
       "segments": [
         {
           "type": "image",
-          "src": "formulas/q38_stem_186.png",
-          "alt": "第38题"
+          "src": "formulas/q38_f_67.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "38 .设一阶系统的传递函数是()，且容许误差为2%，则其调整时间为（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q38_f_68.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q38_opt_A_187.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "1"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q38_opt_B_188.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "1.5"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q38_opt_C_189.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "2"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q38_opt_D_190.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "3"
           }
         ]
       },
@@ -1605,37 +1651,42 @@
       "segments": [
         {
           "type": "image",
-          "src": "formulas/q39_stem_191.png",
-          "alt": "第39题"
+          "src": "formulas/q39_f_69.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "39.根据系统的特征方程()，可以判断系统为（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q39_f_70.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q39_opt_A_192.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "稳定"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q39_opt_B_193.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "不稳定"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q39_opt_C_194.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "临界稳定"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q39_opt_D_195.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "稳定性不确定"
           }
         ]
       },
@@ -1646,38 +1697,41 @@
       "page": 4,
       "segments": [
         {
+          "type": "text",
+          "content": "某反馈系统的开环传递函数为：()，当（　）时，闭环系统稳定。"
+        },
+        {
           "type": "image",
-          "src": "formulas/q40_stem_196.png",
-          "alt": "第40题"
+          "src": "formulas/q40_f_71.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q40_opt_A_197.png",
+            "src": "formulas/q40_opt_A_72.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q40_opt_B_198.png",
+            "src": "formulas/q40_opt_B_73.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q40_opt_C_199.png",
+            "src": "formulas/q40_opt_C_74.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q40_opt_D_200.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "任意T1 和τ2"
           }
         ]
       },
@@ -1688,38 +1742,35 @@
       "page": 4,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q41_stem_201.png",
-          "alt": "第41题"
+          "type": "text",
+          "content": "当输入为单位斜坡且系统为单位反馈时，对于II 型系统其稳态误差为（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q41_opt_A_202.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "0"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q41_opt_B_203.png",
+            "src": "formulas/q41_opt_B_75.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q41_opt_C_204.png",
+            "src": "formulas/q41_opt_C_76.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q41_opt_D_205.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "∞"
           }
         ]
       },
@@ -1730,37 +1781,59 @@
       "page": 4,
       "segments": [
         {
+          "type": "text",
+          "content": "根轨迹渐近线的交点公式为（　） nm mn"
+        },
+        {
           "type": "image",
-          "src": "formulas/q42_stem_206.png",
-          "alt": "第42题"
+          "src": "formulas/q42_f_77.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": ""
+        },
+        {
+          "type": "image",
+          "src": "formulas/q42_f_78.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "ji ij"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q42_f_79.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q42_opt_A_207.png",
+            "src": "formulas/q42_opt_A_80.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q42_opt_B_208.png",
+            "src": "formulas/q42_opt_B_81.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q42_opt_C_209.png",
+            "src": "formulas/q42_opt_C_82.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q42_opt_D_210.png",
+            "src": "formulas/q42_opt_D_83.png",
             "alt": "选项D"
           }
         ]
@@ -1772,38 +1845,33 @@
       "page": 4,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q43_stem_211.png",
-          "alt": "第43题"
+          "type": "text",
+          "content": "随动系统对（　）要求较高。"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q43_opt_A_212.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "快速性"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q43_opt_B_213.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "稳定性"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q43_opt_C_214.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "准确性"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q43_opt_D_215.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "振荡次数"
           }
         ]
       },
@@ -1814,38 +1882,38 @@
       "page": 5,
       "segments": [
         {
+          "type": "text",
+          "content": "某环节的传递函数为，它的对数幅频率特性L()随K值增加而（　）"
+        },
+        {
           "type": "image",
-          "src": "formulas/q44_stem_216.png",
-          "alt": "第44题"
+          "src": "formulas/q44_f_84.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q44_opt_A_217.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "上移"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q44_opt_B_218.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "下移"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q44_opt_C_219.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "左移"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q44_opt_D_220.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "右移"
           }
         ]
       },
@@ -1857,36 +1925,49 @@
       "segments": [
         {
           "type": "image",
-          "src": "formulas/q45_stem_221.png",
-          "alt": "第45题"
+          "src": "formulas/q45_f_85.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "45.设积分环节的传递函数为，则其频率特性幅值A()=（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q45_f_86.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "KB."
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q45_opt_A_222.png",
+            "src": "formulas/q45_opt_A_87.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q45_opt_B_223.png",
+            "src": "formulas/q45_opt_B_88.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q45_opt_C_224.png",
+            "src": "formulas/q45_opt_C_89.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q45_opt_D_225.png",
+            "src": "formulas/q45_opt_D_90.png",
             "alt": "选项D"
           }
         ]
@@ -1899,37 +1980,42 @@
       "segments": [
         {
           "type": "image",
-          "src": "formulas/q46_stem_226.png",
-          "alt": "第46题"
+          "src": "formulas/q46_f_91.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "46.二阶系统的传递函数()，其阻尼比ζ是（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q46_f_92.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q46_opt_A_227.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "0.5"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q46_opt_B_228.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "1"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q46_opt_C_229.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "2"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q46_opt_D_230.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "4"
           }
         ]
       },
@@ -1940,38 +2026,33 @@
       "page": 5,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q47_stem_231.png",
-          "alt": "第47题"
+          "type": "text",
+          "content": "系统稳定的充分必要条件是其特征方程式的所有根均在根平面的（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q47_opt_A_232.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "右半部分"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q47_opt_B_233.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "左半部分"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q47_opt_C_234.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "实轴上"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q47_opt_D_235.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "虚轴上"
           }
         ]
       },
@@ -1982,38 +2063,38 @@
       "page": 5,
       "segments": [
         {
+          "type": "text",
+          "content": "一闭环系统的开环传递函数为，则该系统为（　）"
+        },
+        {
           "type": "image",
-          "src": "formulas/q48_stem_236.png",
-          "alt": "第48题"
+          "src": "formulas/q48_f_93.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q48_opt_A_237.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "0 型系统，开环放大系数K 为2"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q48_opt_B_238.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "I 型系统，开环放大系数K 为2"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q48_opt_C_239.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "I 型系统，开环放大系数K 为1"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q48_opt_D_240.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "0 型系统，开环放大系数K 为1"
           }
         ]
       },
@@ -2024,37 +2105,36 @@
       "page": 5,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q49_stem_241.png",
-          "alt": "第49题"
+          "type": "text",
+          "content": "实轴上分离点的分离角恒为（　）"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q49_opt_A_242.png",
+            "src": "formulas/q49_opt_A_94.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q49_opt_B_243.png",
+            "src": "formulas/q49_opt_B_95.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q49_opt_C_244.png",
+            "src": "formulas/q49_opt_C_96.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q49_opt_D_245.png",
+            "src": "formulas/q49_opt_D_97.png",
             "alt": "选项D"
           }
         ]
@@ -2066,38 +2146,33 @@
       "page": 5,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q50_stem_246.png",
-          "alt": "第50题"
+          "type": "text",
+          "content": "系统特征方程为，则系统（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q50_opt_A_247.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "稳定；"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q50_opt_B_248.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "单位阶跃响应曲线为单调指数上升；"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q50_opt_C_249.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "临界稳定；"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q50_opt_D_250.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "右半平面闭环极点数 2 = Z 。"
           }
         ]
       },
@@ -2108,37 +2183,40 @@
       "page": 5,
       "segments": [
         {
+          "type": "text",
+          "content": "系统的开环传递函数为，则实轴上的根轨迹为（　）"
+        },
+        {
           "type": "image",
-          "src": "formulas/q51_stem_251.png",
-          "alt": "第51题"
+          "src": "formulas/q51_f_98.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q51_opt_A_252.png",
+            "src": "formulas/q51_opt_A_99.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q51_opt_B_253.png",
+            "src": "formulas/q51_opt_B_100.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q51_opt_C_254.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "[0，1] 和 [2，∞）"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q51_opt_D_255.png",
+            "src": "formulas/q51_opt_D_101.png",
             "alt": "选项D"
           }
         ]
@@ -2150,38 +2228,146 @@
       "page": 5,
       "segments": [
         {
+          "type": "text",
+          "content": "K 44.某环节的传递函数为，它的对数幅频率特性L()随K值增加而（　）"
+        },
+        {
           "type": "image",
-          "src": "formulas/q52_stem_256.png",
-          "alt": "第52题"
+          "src": "formulas/q52_f_102.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "A.上移B.下移C.左移D.右移 K"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q52_f_103.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "45.设积分环节的传递函数为，则其频率特性幅值A()=（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q52_f_104.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "KB. A."
+        },
+        {
+          "type": "image",
+          "src": "formulas/q52_f_105.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": ""
+        },
+        {
+          "type": "image",
+          "src": "formulas/q52_f_106.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "46.二阶系统的传递函数()，其阻尼比ζ是（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q52_f_107.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "47.系统稳定的充分必要条件是其特征方程式的所有根均在根平面的（　） A.右半部分B.左半部分C.实轴上D.虚轴上"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q52_f_108.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "48.一闭环系统的开环传递函数为，则该系统为（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q52_f_109.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "A.0型系统，开环放大系数K为2 B.I型系统，开环放大系数K为2 C.I型系统，开环放大系数K为1 D.0型系统，开环放大系数K为1 49.实轴上分离点的分离角恒为（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q52_f_110.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "50.系统特征方程为，则系统（　） A、稳定；B、单位阶跃响应曲线为单调指数上升；"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q52_f_111.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "C、临界稳定；D、右半平面闭环极点数。 K 51.系统的开环传递函数为，则实轴上的根轨迹为（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q52_f_112.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "52若系统的开环传递函数为，则它的开环增益为（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q52_f_113.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "53.比例环节的频率特性相位移()=（　）"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q52_f_114.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q52_opt_A_257.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "10"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q52_opt_B_258.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "2"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q52_opt_C_259.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "1"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q52_opt_D_260.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "5"
           }
         ]
       },
@@ -2192,37 +2378,34 @@
       "page": 5,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q53_stem_261.png",
-          "alt": "第53题"
+          "type": "text",
+          "content": "比例环节的频率特性相位移()=（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q53_opt_A_262.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "0°"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q53_opt_B_263.png",
+            "src": "formulas/q53_opt_B_115.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q53_opt_C_264.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "90°"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q53_opt_D_265.png",
+            "src": "formulas/q53_opt_D_116.png",
             "alt": "选项D"
           }
         ]
@@ -2234,37 +2417,41 @@
       "page": 6,
       "segments": [
         {
+          "type": "text",
+          "content": " 54.已知系统的微分方程为，则系统的传递函数是（　）"
+        },
+        {
           "type": "image",
-          "src": "formulas/q54_stem_266.png",
-          "alt": "第54题"
+          "src": "formulas/q54_f_117.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q54_opt_A_267.png",
+            "src": "formulas/q54_opt_A_118.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q54_opt_B_268.png",
+            "src": "formulas/q54_opt_B_119.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q54_opt_C_269.png",
+            "src": "formulas/q54_opt_C_120.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q54_opt_D_270.png",
+            "src": "formulas/q54_opt_D_121.png",
             "alt": "选项D"
           }
         ]
@@ -2276,38 +2463,38 @@
       "page": 6,
       "segments": [
         {
+          "type": "text",
+          "content": "一阶惯性系统的转折频率指（　）"
+        },
+        {
           "type": "image",
-          "src": "formulas/q55_stem_271.png",
-          "alt": "第55题"
+          "src": "formulas/q55_f_122.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q55_opt_A_272.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "2"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q55_opt_B_273.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "1"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q55_opt_C_274.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "0.5"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q55_opt_D_275.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "0"
           }
         ]
       },
@@ -2318,9 +2505,17 @@
       "page": 6,
       "segments": [
         {
+          "type": "text",
+          "content": "设单位负反馈控制系统的开环传递函数，其中K>0，a>0，则闭环控制"
+        },
+        {
           "type": "image",
-          "src": "formulas/q56_stem_276.png",
-          "alt": "第56题"
+          "src": "formulas/q56_f_123.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "系统的稳定性与（　）"
         }
       ],
       "options": {
@@ -2338,16 +2533,14 @@
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q56_opt_C_279.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "a 和K 值的大小无关"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q56_opt_D_280.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "a 和K 值的大小有关"
           }
         ]
       },
@@ -2358,38 +2551,33 @@
       "page": 6,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q57_stem_281.png",
-          "alt": "第57题"
+          "type": "text",
+          "content": "系统特征方程式的所有根均在根平面的左半部分是系统稳定的（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q57_opt_A_282.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "充分条件"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q57_opt_B_283.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "必要条件"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q57_opt_C_284.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "充分必要条件"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q57_opt_D_285.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "以上都不是"
           }
         ]
       },
@@ -2400,37 +2588,35 @@
       "page": 6,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q58_stem_286.png",
-          "alt": "第58题"
+          "type": "text",
+          "content": "根轨迹上的点应满足的幅角条件为（　）"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q58_opt_A_287.png",
+            "src": "formulas/q58_opt_A_124.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q58_opt_B_288.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "1"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q58_opt_C_289.png",
+            "src": "formulas/q58_opt_C_125.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q58_opt_D_290.png",
+            "src": "formulas/q58_opt_D_126.png",
             "alt": "选项D"
           }
         ]
@@ -2442,38 +2628,33 @@
       "page": 6,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q59_stem_291.png",
-          "alt": "第59题"
+          "type": "text",
+          "content": "主导极点的特点是（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q59_opt_A_292.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "距离虚轴很近"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q59_opt_B_293.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "距离实轴很近"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q59_opt_C_294.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "距离虚轴很远"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q59_opt_D_295.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "距离实轴很远"
           }
         ]
       },
@@ -2484,38 +2665,33 @@
       "page": 6,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q60_stem_296.png",
-          "alt": "第60题"
+          "type": "text",
+          "content": "已知开环幅频特性如图2 所示， 则图中不稳定的系统是（　）。 \n 系统① 系统② 系统③ \n图2"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q60_opt_A_297.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "系统①"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q60_opt_B_298.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "系统②"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q60_opt_C_299.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "系统③"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q60_opt_D_300.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "都不稳定"
           }
         ]
       },
@@ -2526,9 +2702,8 @@
       "page": 6,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q61_stem_301.png",
-          "alt": "第61题"
+          "type": "text",
+          "content": "若某最小相位系统的相角裕度，则下列说法正确的是（　）。"
         }
       ],
       "options": {
@@ -2564,38 +2739,38 @@
       "page": 7,
       "segments": [
         {
+          "type": "text",
+          "content": "若某串联校正装置的传递函数为10，则该校正装置属于（　）。"
+        },
+        {
           "type": "image",
-          "src": "formulas/q62_stem_302.png",
-          "alt": "第62题"
+          "src": "formulas/q62_f_128.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q62_opt_A_303.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "超前校正"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q62_opt_B_304.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "滞后校正"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q62_opt_C_305.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "滞后-超前校正"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q62_opt_D_306.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "不能判断"
           }
         ]
       },
@@ -2606,38 +2781,33 @@
       "page": 7,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q63_stem_307.png",
-          "alt": "第63题"
+          "type": "text",
+          "content": "下列哪种措施对改善系统的精度没有效果 （　）。"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q63_opt_A_308.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "增加积分环节"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q63_opt_B_309.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "提高系统的开环增益K"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q63_opt_C_310.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "增加微分环节"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q63_opt_D_311.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "引入扰动补偿"
           }
         ]
       },
@@ -2648,38 +2818,38 @@
       "page": 7,
       "segments": [
         {
+          "type": "text",
+          "content": "已知系统的开环传递函数为，则该系统的开环增益为（　）。"
+        },
+        {
           "type": "image",
-          "src": "formulas/q64_stem_312.png",
-          "alt": "第64题"
+          "src": "formulas/q64_f_129.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q64_opt_A_313.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "50"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q64_opt_B_314.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "25"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q64_opt_C_315.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "10"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q64_opt_D_316.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "5"
           }
         ]
       },
@@ -2690,38 +2860,33 @@
       "page": 7,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q65_stem_317.png",
-          "alt": "第65题"
+          "type": "text",
+          "content": "若某系统的根轨迹有两个起点位于原点，则说明该系统（　） 。"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q65_opt_A_318.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "含两个理想微分环节"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q65_opt_B_319.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "含两个积分环节"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q65_opt_C_320.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "位置误差系数为0"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q65_opt_D_321.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "速度误差系数为0"
           }
         ]
       },
@@ -2732,16 +2897,20 @@
       "page": 7,
       "segments": [
         {
+          "type": "text",
+          "content": "已知某些系统的开环传递函数如下，属于最小相位系统的是（　）"
+        },
+        {
           "type": "image",
-          "src": "formulas/q66_stem_322.png",
-          "alt": "第66题"
+          "src": "formulas/q66_f_130.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q66_opt_A_323.png",
+            "src": "formulas/q66_opt_A_131.png",
             "alt": "选项A"
           }
         ],
@@ -2760,7 +2929,7 @@
         "D": [
           {
             "type": "image",
-            "src": "formulas/q66_opt_D_326.png",
+            "src": "formulas/q66_opt_D_134.png",
             "alt": "选项D"
           }
         ]
@@ -2772,38 +2941,33 @@
       "page": 7,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q67_stem_327.png",
-          "alt": "第67题"
+          "type": "text",
+          "content": "开环对数幅频特性的低频段决定了系统的（　）。"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q67_opt_A_328.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "稳态精度"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q67_opt_B_329.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "稳定裕度"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q67_opt_C_330.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "抗干扰性能"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q67_opt_D_331.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "快速性"
           }
         ]
       },
@@ -2814,38 +2978,41 @@
       "page": 7,
       "segments": [
         {
+          "type": "text",
+          "content": "若某负反馈控制系统的开环传递函数为，则该系统的闭环特征方程为（　）。"
+        },
+        {
           "type": "image",
-          "src": "formulas/q68_stem_332.png",
-          "alt": "第68题"
+          "src": "formulas/q68_f_135.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q68_opt_A_333.png",
+            "src": "formulas/q68_opt_A_136.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q68_opt_B_334.png",
+            "src": "formulas/q68_opt_B_137.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q68_opt_C_335.png",
+            "src": "formulas/q68_opt_C_138.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q68_opt_D_336.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "与是否为单位反馈系统有关"
           }
         ]
       },
@@ -2856,38 +3023,42 @@
       "page": 7,
       "segments": [
         {
+          "type": "text",
+          "content": "已知单位反馈系统的开环传递函数为，当输入信号是"
+        },
+        {
           "type": "image",
-          "src": "formulas/q69_stem_337.png",
-          "alt": "第69题"
+          "src": "formulas/q69_f_139.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "( )22r ttt=++时，系统的稳态误差是（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q69_opt_A_338.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "0 ；"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q69_opt_B_339.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "∞ ；"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q69_opt_C_340.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "10 ；"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q69_opt_D_341.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "20"
           }
         ]
       },
@@ -2898,38 +3069,35 @@
       "page": 7,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q70_stem_342.png",
-          "alt": "第70题"
+          "type": "text",
+          "content": "设二阶微分环节G(s)=s2+2s+4，则其对数幅频特性的高频段渐近线斜率为（　）"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q70_opt_A_343.png",
+            "src": "formulas/q70_opt_A_140.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q70_opt_B_344.png",
+            "src": "formulas/q70_opt_B_141.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q70_opt_C_345.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "20dB／dec"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q70_opt_D_346.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "40dB／"
           }
         ]
       },
@@ -2940,38 +3108,33 @@
       "page": 8,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q71_stem_347.png",
-          "alt": "第71题"
+          "type": "text",
+          "content": "描述RLC 电路的线性常系数微分方程的阶次是（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q71_opt_A_348.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "零阶"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q71_opt_B_349.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "一阶"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q71_opt_C_350.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "二阶"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q71_opt_D_351.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "三阶"
           }
         ]
       },
@@ -2982,37 +3145,41 @@
       "page": 8,
       "segments": [
         {
+          "type": "text",
+          "content": "设单位负反馈系统的开环传递函数为G0(s)=，则系统的特征方程为（　）"
+        },
+        {
           "type": "image",
-          "src": "formulas/q72_stem_352.png",
-          "alt": "第72题"
+          "src": "formulas/q72_f_142.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q72_opt_A_353.png",
+            "src": "formulas/q72_opt_A_143.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q72_opt_B_354.png",
+            "src": "formulas/q72_opt_B_144.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q72_opt_C_355.png",
+            "src": "formulas/q72_opt_C_145.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q72_opt_D_356.png",
+            "src": "formulas/q72_opt_D_146.png",
             "alt": "选项D"
           }
         ]
@@ -3024,37 +3191,40 @@
       "page": 8,
       "segments": [
         {
+          "type": "text",
+          "content": "某校正环节频率特性Gc（j）=10，其对数幅频特性渐近线高频段斜率为（　）"
+        },
+        {
           "type": "image",
-          "src": "formulas/q73_stem_357.png",
-          "alt": "第73题"
+          "src": "formulas/q73_f_147.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q73_opt_A_358.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "0dB／dec"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q73_opt_B_359.png",
+            "src": "formulas/q73_opt_B_148.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q73_opt_C_360.png",
+            "src": "formulas/q73_opt_C_149.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q73_opt_D_361.png",
+            "src": "formulas/q73_opt_D_150.png",
             "alt": "选项D"
           }
         ]
@@ -3066,37 +3236,36 @@
       "page": 8,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q74_stem_362.png",
-          "alt": "第74题"
+          "type": "text",
+          "content": "稳态位置误差系数Kρ 为（　）"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q74_opt_A_363.png",
+            "src": "formulas/q74_opt_A_151.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q74_opt_B_364.png",
+            "src": "formulas/q74_opt_B_152.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q74_opt_C_365.png",
+            "src": "formulas/q74_opt_C_153.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q74_opt_D_366.png",
+            "src": "formulas/q74_opt_D_154.png",
             "alt": "选项D"
           }
         ]
@@ -3108,38 +3277,33 @@
       "page": 8,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q75_stem_367.png",
-          "alt": "第75题"
+          "type": "text",
+          "content": "若系统存在临界稳定状态，则根轨迹必定与（　）相交"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q75_opt_A_368.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "实轴"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q75_opt_B_369.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "虚轴"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q75_opt_C_370.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "渐近线"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q75_opt_D_371.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "阻尼线"
           }
         ]
       },
@@ -3150,37 +3314,36 @@
       "page": 8,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q76_stem_372.png",
-          "alt": "第76题"
+          "type": "text",
+          "content": "下列开环传递函数中为最小相位传递函数的是（　）"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q76_opt_A_373.png",
+            "src": "formulas/q76_opt_A_155.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q76_opt_B_374.png",
+            "src": "formulas/q76_opt_B_156.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q76_opt_C_375.png",
+            "src": "formulas/q76_opt_C_157.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q76_opt_D_376.png",
+            "src": "formulas/q76_opt_D_158.png",
             "alt": "选项D"
           }
         ]
@@ -3192,38 +3355,33 @@
       "page": 8,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q77_stem_377.png",
-          "alt": "第77题"
+          "type": "text",
+          "content": "当二阶系统的阻尼比在0<<l时，特征根为（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q77_opt_A_378.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "一对实部为负的共轭复根"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q77_opt_B_379.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "一对实部为正的共轭复根"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q77_opt_C_380.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "一对共轭虚根"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q77_opt_D_381.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "一对负的等根"
           }
         ]
       },
@@ -3234,38 +3392,42 @@
       "page": 8,
       "segments": [
         {
+          "type": "text",
+          "content": "设系统的开环传递函数为G(s)H(s) =，其在根轨迹法中用到的开环放大系数"
+        },
+        {
           "type": "image",
-          "src": "formulas/q78_stem_382.png",
-          "alt": "第78题"
+          "src": "formulas/q78_f_159.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "为（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q78_opt_A_383.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "K／2"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q78_opt_B_384.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "K"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q78_opt_C_385.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "2K"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q78_opt_D_386.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "4K"
           }
         ]
       },
@@ -3276,38 +3438,38 @@
       "page": 8,
       "segments": [
         {
+          "type": "text",
+          "content": "设系统的G(s)=，则系统的阻尼比为（　）"
+        },
+        {
           "type": "image",
-          "src": "formulas/q79_stem_387.png",
-          "alt": "第79题"
+          "src": "formulas/q79_f_160.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q79_opt_A_388.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "25 1"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q79_opt_B_389.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "5 1"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q79_opt_C_390.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "2 1"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q79_opt_D_391.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "1"
           }
         ]
       },
@@ -3318,37 +3480,45 @@
       "page": 9,
       "segments": [
         {
+          "type": "text",
+          "content": "设某系统开环传递函数为G(s)=，则其频率特性的奈氏图起点坐标为"
+        },
+        {
           "type": "image",
-          "src": "formulas/q80_stem_392.png",
-          "alt": "第80题"
+          "src": "formulas/q80_f_161.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "（　）"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q80_opt_A_393.png",
+            "src": "formulas/q80_opt_A_162.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q80_opt_B_394.png",
+            "src": "formulas/q80_opt_B_163.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q80_opt_C_395.png",
+            "src": "formulas/q80_opt_C_164.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q80_opt_D_396.png",
+            "src": "formulas/q80_opt_D_165.png",
             "alt": "选项D"
           }
         ]
@@ -3360,38 +3530,33 @@
       "page": 9,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q81_stem_397.png",
-          "alt": "第81题"
+          "type": "text",
+          "content": "控制系统的最大超调量σp 反映了系统的（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q81_opt_A_398.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "相对稳定性"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q81_opt_B_399.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "绝对稳定性"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q81_opt_C_400.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "快速性"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q81_opt_D_401.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "稳态性能"
           }
         ]
       },
@@ -3402,37 +3567,36 @@
       "page": 9,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q82_stem_402.png",
-          "alt": "第82题"
+          "type": "text",
+          "content": "稳态加速度误差数Ka=（　）"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q82_opt_A_403.png",
+            "src": "formulas/q82_opt_A_166.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q82_opt_B_404.png",
+            "src": "formulas/q82_opt_B_167.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q82_opt_C_405.png",
+            "src": "formulas/q82_opt_C_168.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q82_opt_D_406.png",
+            "src": "formulas/q82_opt_D_169.png",
             "alt": "选项D"
           }
         ]
@@ -3444,37 +3608,36 @@
       "page": 9,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q83_stem_407.png",
-          "alt": "第83题"
+          "type": "text",
+          "content": "下列开环传递函数中为非最小相位传递函数的是（　）"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q83_opt_A_408.png",
+            "src": "formulas/q83_opt_A_170.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q83_opt_B_409.png",
+            "src": "formulas/q83_opt_B_171.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q83_opt_C_410.png",
+            "src": "formulas/q83_opt_C_172.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q83_opt_D_411.png",
+            "src": "formulas/q83_opt_D_173.png",
             "alt": "选项D"
           }
         ]
@@ -3486,38 +3649,33 @@
       "page": 9,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q84_stem_412.png",
-          "alt": "第84题"
+          "type": "text",
+          "content": "要求系统快速性好，则闭环极点应距（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q84_opt_A_413.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "虚轴远"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q84_opt_B_414.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "虚轴近"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q84_opt_C_415.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "实轴近"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q84_opt_D_416.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "实轴远"
           }
         ]
       },
@@ -3529,36 +3687,49 @@
       "segments": [
         {
           "type": "image",
-          "src": "formulas/q85_stem_417.png",
-          "alt": "第85题"
+          "src": "formulas/q85_f_174.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "85.设开环系统频率特性为，当频率从0变化至∞时，其相角变"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q85_f_175.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "化范围为（　）"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q85_opt_A_418.png",
+            "src": "formulas/q85_opt_A_176.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q85_opt_B_419.png",
+            "src": "formulas/q85_opt_B_177.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q85_opt_C_420.png",
+            "src": "formulas/q85_opt_C_178.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q85_opt_D_421.png",
+            "src": "formulas/q85_opt_D_179.png",
             "alt": "选项D"
           }
         ]
@@ -3570,37 +3741,41 @@
       "page": 9,
       "segments": [
         {
+          "type": "text",
+          "content": "计算根轨迹渐近线的倾角的公式为（　）"
+        },
+        {
           "type": "image",
-          "src": "formulas/q86_stem_422.png",
-          "alt": "第86题"
+          "src": "formulas/q86_f_180.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q86_opt_A_423.png",
+            "src": "formulas/q86_opt_A_181.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q86_opt_B_424.png",
+            "src": "formulas/q86_opt_B_182.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q86_opt_C_425.png",
+            "src": "formulas/q86_opt_C_183.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q86_opt_D_426.png",
+            "src": "formulas/q86_opt_D_184.png",
             "alt": "选项D"
           }
         ]
@@ -3612,38 +3787,47 @@
       "page": 10,
       "segments": [
         {
+          "type": "text",
+          "content": "设二阶系统的)(=sG，则系统的阻尼比ω和自然振荡频率"
+        },
+        {
           "type": "image",
-          "src": "formulas/q87_stem_427.png",
-          "alt": "第87题"
+          "src": "formulas/q87_f_185.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "n"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q87_f_186.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q87_opt_A_428.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "2 1 9 1 、"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q87_opt_B_429.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "3 2 4 1 、"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q87_opt_C_430.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "9 2 3 1、"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q87_opt_D_431.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "4 1 2 1 、"
           }
         ]
       },
@@ -3654,37 +3838,36 @@
       "page": 10,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q88_stem_432.png",
-          "alt": "第88题"
+          "type": "text",
+          "content": "终值定理的数学表达式为（　）"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q88_opt_A_433.png",
+            "src": "formulas/q88_opt_A_187.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q88_opt_B_434.png",
+            "src": "formulas/q88_opt_B_188.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q88_opt_C_435.png",
+            "src": "formulas/q88_opt_C_189.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q88_opt_D_436.png",
+            "src": "formulas/q88_opt_D_190.png",
             "alt": "选项D"
           }
         ]
@@ -3696,37 +3879,36 @@
       "page": 10,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q89_stem_437.png",
-          "alt": "第89题"
+          "type": "text",
+          "content": "梅森公式为（　）"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q89_opt_A_438.png",
+            "src": "formulas/q89_opt_A_191.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q89_opt_B_439.png",
+            "src": "formulas/q89_opt_B_192.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q89_opt_C_440.png",
+            "src": "formulas/q89_opt_C_193.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q89_opt_D_441.png",
+            "src": "formulas/q89_opt_D_194.png",
             "alt": "选项D"
           }
         ]
@@ -3738,38 +3920,33 @@
       "page": 10,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q90_stem_442.png",
-          "alt": "第90题"
+          "type": "text",
+          "content": "方框图化简时，并联连接方框总的输出量为各方框输出量的（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q90_opt_A_443.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "乘积"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q90_opt_B_444.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "代数和"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q90_opt_C_445.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "加权平均"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q90_opt_D_446.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "平均值"
           }
         ]
       },
@@ -3780,38 +3957,33 @@
       "page": 10,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q91_stem_447.png",
-          "alt": "第91题"
+          "type": "text",
+          "content": "单位抛物线输入函数r(t)的数学表达式是r(t)＝（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q91_opt_A_448.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "at2"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q91_opt_B_449.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "2 1 Rt2"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q91_opt_C_450.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "t2"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q91_opt_D_451.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "2 1 t2"
           }
         ]
       },
@@ -3822,38 +3994,36 @@
       "page": 10,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q92_stem_452.png",
-          "alt": "第92题"
+          "type": "text",
+          "content": "单位阶跃函数的拉氏变换是（　）"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q92_opt_A_453.png",
+            "src": "formulas/q92_opt_A_195.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q92_opt_B_454.png",
+            "src": "formulas/q92_opt_B_196.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q92_opt_C_455.png",
+            "src": "formulas/q92_opt_C_197.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q92_opt_D_456.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "1"
           }
         ]
       },
@@ -3864,38 +4034,33 @@
       "page": 10,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q93_stem_457.png",
-          "alt": "第93题"
+          "type": "text",
+          "content": "同一系统，不同输入信号和输出信号之间传递函数的特征方程（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q93_opt_A_458.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "相同"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q93_opt_B_459.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "不同"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q93_opt_C_460.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "不存在"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q93_opt_D_461.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "不定"
           }
         ]
       },
@@ -3906,38 +4071,33 @@
       "page": 10,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q94_stem_462.png",
-          "alt": "第94题"
+          "type": "text",
+          "content": "Ⅱ型系统对数幅频特性的低频段渐近线斜率为（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q94_opt_A_463.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "－60dB／dec"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q94_opt_B_464.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "－40dB／dec"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q94_opt_C_465.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "－20dB／dec"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q94_opt_D_466.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "0dB／dec"
           }
         ]
       },
@@ -3948,38 +4108,33 @@
       "page": 10,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q95_stem_467.png",
-          "alt": "第95题"
+          "type": "text",
+          "content": "惯性环节又称为（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q95_opt_A_468.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "积分环节"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q95_opt_B_469.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "微分环节"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q95_opt_C_470.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "一阶滞后环节"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q95_opt_D_471.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "振荡环节"
           }
         ]
       },
@@ -3990,38 +4145,33 @@
       "page": 11,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q96_stem_472.png",
-          "alt": "第96题"
+          "type": "text",
+          "content": "根轨迹终止于（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q96_opt_A_473.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "闭环零点"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q96_opt_B_474.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "闭环极点"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q96_opt_C_475.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "开环零点"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q96_opt_D_476.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "开环极点"
           }
         ]
       },
@@ -4032,37 +4182,50 @@
       "page": 11,
       "segments": [
         {
+          "type": "text",
+          "content": "若某系统的传递函数为G（s）=，则相应的频率特性G（jω）为（　）"
+        },
+        {
           "type": "image",
-          "src": "formulas/q97_stem_477.png",
-          "alt": "第97题"
+          "src": "formulas/q97_f_198.png",
+          "alt": "公式"
+        },
+        {
+          "type": "text",
+          "content": "KKKK"
+        },
+        {
+          "type": "image",
+          "src": "formulas/q97_f_199.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q97_opt_A_478.png",
+            "src": "formulas/q97_opt_A_200.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q97_opt_B_479.png",
+            "src": "formulas/q97_opt_B_201.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q97_opt_C_480.png",
+            "src": "formulas/q97_opt_C_202.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q97_opt_D_481.png",
+            "src": "formulas/q97_opt_D_203.png",
             "alt": "选项D"
           }
         ]
@@ -4074,37 +4237,36 @@
       "page": 11,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q98_stem_482.png",
-          "alt": "第98题"
+          "type": "text",
+          "content": "已知α+jβ 是根轨迹上的一点，则必在根轨迹上的点是（　）"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q98_opt_A_483.png",
+            "src": "formulas/q98_opt_A_204.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q98_opt_B_484.png",
+            "src": "formulas/q98_opt_B_205.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q98_opt_C_485.png",
+            "src": "formulas/q98_opt_C_206.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q98_opt_D_486.png",
+            "src": "formulas/q98_opt_D_207.png",
             "alt": "选项D"
           }
         ]
@@ -4116,37 +4278,41 @@
       "page": 11,
       "segments": [
         {
+          "type": "text",
+          "content": "设某开环系统的传递函数为( )G s=，其频率特性的相位移θ(ω)=（　）"
+        },
+        {
           "type": "image",
-          "src": "formulas/q99_stem_487.png",
-          "alt": "第99题"
+          "src": "formulas/q99_f_208.png",
+          "alt": "公式"
         }
       ],
       "options": {
         "A": [
           {
             "type": "image",
-            "src": "formulas/q99_opt_A_488.png",
+            "src": "formulas/q99_opt_A_209.png",
             "alt": "选项A"
           }
         ],
         "B": [
           {
             "type": "image",
-            "src": "formulas/q99_opt_B_489.png",
+            "src": "formulas/q99_opt_B_210.png",
             "alt": "选项B"
           }
         ],
         "C": [
           {
             "type": "image",
-            "src": "formulas/q99_opt_C_490.png",
+            "src": "formulas/q99_opt_C_211.png",
             "alt": "选项C"
           }
         ],
         "D": [
           {
             "type": "image",
-            "src": "formulas/q99_opt_D_491.png",
+            "src": "formulas/q99_opt_D_212.png",
             "alt": "选项D"
           }
         ]
@@ -4158,38 +4324,33 @@
       "page": 11,
       "segments": [
         {
-          "type": "image",
-          "src": "formulas/q100_stem_492.png",
-          "alt": "第100题"
+          "type": "text",
+          "content": "系统的根轨迹关于（　）"
         }
       ],
       "options": {
         "A": [
           {
-            "type": "image",
-            "src": "formulas/q100_opt_A_493.png",
-            "alt": "选项A"
+            "type": "text",
+            "content": "虚轴对称"
           }
         ],
         "B": [
           {
-            "type": "image",
-            "src": "formulas/q100_opt_B_494.png",
-            "alt": "选项B"
+            "type": "text",
+            "content": "原点对称"
           }
         ],
         "C": [
           {
-            "type": "image",
-            "src": "formulas/q100_opt_C_495.png",
-            "alt": "选项C"
+            "type": "text",
+            "content": "实轴对称"
           }
         ],
         "D": [
           {
-            "type": "image",
-            "src": "formulas/q100_opt_D_496.png",
-            "alt": "选项D"
+            "type": "text",
+            "content": "渐近线对称"
           }
         ]
       },

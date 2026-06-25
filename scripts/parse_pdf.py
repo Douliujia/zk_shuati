@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""从 PDF 解析选择题，题干/公式以 PDF 原图截图为主，保证与源文档一致。"""
+"""从 PDF 解析选择题：纯文字用文本，公式/图形用 PDF 原图截图。"""
 
 from __future__ import annotations
 
@@ -30,36 +30,38 @@ SYMBOL_MAP = {
     "\uf0b4": "*",
     "\uf028": "(",
     "\uf029": ")",
-    "\uf0a5": r"\infty",
-    "\uf061": r"\alpha",
-    "\uf062": r"\beta",
-    "\uf07a": r"\omega",
-    "\uf074": r"\tau",
+    "\uf0a5": "∞",
+    "\uf061": "α",
+    "\uf062": "β",
+    "\uf07a": "ω",
+    "\uf074": "τ",
     "\u2212": "-",
-    "\u221e": r"\infty",
-    "\u03b6": r"\zeta",
-    "\u03c9": r"\omega",
-    "\u03b1": r"\alpha",
-    "\u03b2": r"\beta",
-    "\u03b3": r"\gamma",
-    "\u03c4": r"\tau",
-    "\u0394": r"\Delta",
-    "\u2220": r"\angle",
-    "\u2211": r"\sum",
+    "\u221e": "∞",
+    "\u03b6": "ζ",
+    "\u03c9": "ω",
+    "\u03b1": "α",
+    "\u03b2": "β",
+    "\u03b3": "γ",
+    "\u03c4": "τ",
+    "\u0394": "Δ",
+    "\u2220": "∠",
+    "\u2211": "∑",
+    "\u00b1": "±",
 }
 
-GREEK_INLINE = {
-    "ζ": r"\zeta",
-    "ω": r"\omega",
-    "α": r"\alpha",
-    "β": r"\beta",
-    "γ": r"\gamma",
-    "τ": r"\tau",
-    "Δ": r"\Delta",
-    "∠": r"\angle",
-    "∞": r"\infty",
-    "±": r"\pm",
-    "°": r"^\circ",
+# 保留 LaTeX 名称到 Unicode 的兜底（PDF 文本偶发导出为 \omega 等形式）
+LATEX_NAME_TO_UNICODE = {
+    r"\omega": "ω",
+    r"\Omega": "Ω",
+    r"\zeta": "ζ",
+    r"\alpha": "α",
+    r"\beta": "β",
+    r"\gamma": "γ",
+    r"\tau": "τ",
+    r"\Delta": "Δ",
+    r"\infty": "∞",
+    r"\angle": "∠",
+    r"\pm": "±",
 }
 
 ANSWER_RE = re.compile(r"[（(]\s*([A-Da-d])\s*[）)]?")
@@ -96,18 +98,59 @@ def clean_symbol_text(text: str) -> str:
     return re.sub(r"[ \t]+", " ", text).strip()
 
 
-def text_to_latex_inline(text: str) -> str:
+def text_to_display(text: str) -> str:
+    """将 PDF 提取文本转为页面可显示的纯文本（希腊字母等用 Unicode）。"""
     text = clean_symbol_text(text)
+    for name, ch in LATEX_NAME_TO_UNICODE.items():
+        text = text.replace(name, ch)
     text = ANSWER_RE.sub("（　）", text, count=1)
-    for ch, latex in GREEK_INLINE.items():
-        text = text.replace(ch, f"${latex}$")
-    text = text.replace("$\\omega$n", "$\\omega_n$")
-    text = text.replace("ess", "$e_{ss}$")
-    for token in ["G(s)H(s)", "G_c(s)", "G_B(s)", "G(s)", "H(s)", "E(s)"]:
-        text = text.replace(token, f"${token}$")
-    text = text.replace("+∞", "$+\\infty$")
-    text = re.sub(r"(\d+)°", lambda m: f"${m.group(1)}^\\circ$", text)
+    text = text.replace("ωn", "ωₙ").replace("ω n", "ωₙ")
+    text = re.sub(r"(\d+)°", r"\1°", text)
     return text
+
+
+def is_text_option(val: str) -> bool:
+    """纯文字/数字选项，无需截图。"""
+    val = clean_symbol_text(val.strip())
+    if re.fullmatch(r"\d+", val):
+        return True
+    if not re.search(r"[\u4e00-\u9fff]", val):
+        return False
+    return not is_formula_content(val)
+
+
+def is_formula_content(text: str) -> bool:
+    """内容含公式、分式或 PDF 无法可靠还原为文字的符号。"""
+    if any("\uf000" <= ch <= "\uf0ff" for ch in text):
+        return True
+    if re.search(
+        r"为\s*[，,]\s*则|函数为\s*[，,]|方程为\s*[，,]|传递函数\s*[，,]|传\s*递\s*函\s*数为\s*[，,]",
+        text,
+    ):
+        return True
+    if re.search(r"[=+]|G\s*\(|H\s*\(|\\frac|/\s*s\b|s\^|s\+", text):
+        cjk = len(re.findall(r"[\u4e00-\u9fff]", text))
+        if cjk < 4:
+            return True
+    # 以符号/字母为主、几乎无中文的片段
+    if len(text.strip()) > 1 and len(re.findall(r"[\u4e00-\u9fff]", text)) < 2:
+        if re.search(r"[=+\-*/\(\)sSGH]", text):
+            return True
+    return False
+
+
+def stem_needs_formula_image(head: str, stem_lines: List[dict]) -> bool:
+    if is_formula_content(head):
+        return True
+    if re.search(r"为\s*[，,]|函数为\s*[，,]|方程为\s*[，,]", head):
+        return True
+    for ln in stem_lines:
+        text = ln.get("text", "")
+        if ln.get("math") and ln.get("left", 0) > 120:
+            return True
+        if not re.search(r"[\u4e00-\u9fff]{2,}", text) and re.search(r"[=+\-*/\(\)sS]", text):
+            return True
+    return False
 
 
 def extract_answer(text: str) -> Tuple[str, Optional[str]]:
@@ -160,15 +203,10 @@ def build_option_segments(
     markers: Dict[str, fitz.Rect],
     opt_y1: float,
 ) -> List[dict]:
-    val = val.strip()
-    formula_like = bool(
-        re.search(r"[=+]|s\s*s|s\)|\(\s*1\)|G\(|H\(|\\", val)
-        or any("\uf000" <= ch <= "\uf0ff" for ch in val)
-    ) and len(re.findall(r"[\u4e00-\u9fff]", val)) < 4
-    has_marker = label in markers
-    # 纯中文选项保留文字；PDF 上能定位到标记或含公式的选项用原图
-    if not has_marker and re.search(r"[\u4e00-\u9fff]", val) and not formula_like:
-        return [{"type": "text", "content": val}]
+    val = clean_symbol_text(val.strip())
+    # 纯文字选项一律用文本，不截图
+    if is_text_option(val) or not is_formula_content(val):
+        return [{"type": "text", "content": text_to_display(val)}]
 
     img_counter[0] += 1
     rel = crop_option_on_page(
@@ -176,7 +214,7 @@ def build_option_segments(
     )
     if rel:
         return [{"type": "image", "src": rel, "alt": f"选项{label}"}]
-    return [{"type": "text", "content": val}]
+    return [{"type": "text", "content": text_to_display(val)}]
 
 
 def extract_lines(page: fitz.Page) -> List[dict]:
@@ -410,39 +448,38 @@ def page_max(lines: List[dict]) -> float:
     return max((ln["top"] for ln in lines), default=9999)
 
 
-def crop_formula_between_lines(page: fitz.Page, lines: List[dict], y0: float, y1: float, name: str) -> Optional[str]:
+def is_math_line(ln: dict) -> bool:
+    text = ln.get("text", "")
+    if re.match(rf"^\s*\d+[\．\.]", text):
+        return False
+    if ln.get("math") and ln.get("left", 0) > 120:
+        return True
+    if not re.search(r"[\u4e00-\u9fff]{2,}", text) and re.search(r"[=+\-*/\(\)sSGH\d]", text):
+        return True
+    return False
+
+
+def line_display_text(ln: dict, strip_qid: bool = False) -> str:
+    text = ln.get("text", "")
+    if strip_qid:
+        text = QUESTION_HEAD_RE.sub("", text, count=1).strip()
+    return text_to_display(text)
+
+
+def find_math_lines_in_range(lines: List[dict], y0: float, y1: float) -> List[dict]:
+    return [ln for ln in lines if y0 <= ln["top"] <= y1 and is_math_line(ln)]
+
+
+def crop_stem_formula_image(
+    page: fitz.Page, lines: List[dict], y0: float, y1: float, qid: int, idx: int
+) -> Optional[str]:
     math_lines = find_math_lines_in_range(lines, y0, y1)
     if not math_lines:
         return None
-    bbox = merge_bbox([line_bbox(ln, page.rect) for ln in math_lines])
-    # 分式等竖排公式：适当放宽宽度
-    bbox = fitz.Rect(max(0, min(bbox.x0, 160) - 8), bbox.y0, min(page.rect.width, max(bbox.x1, 320)), bbox.y1)
-    if bbox.width < 8 or bbox.height < 8:
-        return None
-    return crop_formula_image(page, bbox, name)
-
-
-def find_formula_bbox_for_text(
-    fragment: str,
-    lines: List[dict],
-    page_rect: fitz.Rect,
-    y0: float = 0,
-    y1: float = 9999,
-) -> Optional[fitz.Rect]:
-    key = re.sub(r"\s+", "", fragment)[:10]
-    if len(key) < 2:
-        return None
-    rects = []
-    for ln in lines:
-        if ln["top"] < y0 or ln["top"] > y1:
-            continue
-        if ln.get("math") or ln["left"] > 130:
-            compact = re.sub(r"\s+", "", ln["text"])
-            if key in compact or (len(compact) >= 3 and compact in key):
-                rects.append(line_bbox(ln, page_rect))
-    if rects:
-        return merge_bbox(rects)
-    return None
+    ty0 = min(ln["top"] for ln in math_lines)
+    ty1 = max(ln["top"] + max(ln.get("size", 12) * 1.5, 18) for ln in math_lines)
+    bbox = region_bbox(page, lines, ty0, ty1)
+    return crop_formula_image(page, bbox, f"q{qid}_f_{idx}")
 
 
 def extract_formula_segments(
@@ -453,15 +490,53 @@ def extract_formula_segments(
     counter: List[int],
     block: str,
 ) -> Tuple[List[dict], Optional[str]]:
-    """题干一律从 PDF 截取整段原图，保证与源文档格式一致。"""
+    """题干：纯文字用文本；含公式/图形时按行混排文字与公式截图。"""
     head = QUESTION_HEAD_RE.sub("", stem, count=1).strip()
-    _, answer_from_head = extract_answer(head)
+    head, answer_from_head = extract_answer(head)
 
     y0, y1 = find_question_y_range(page, lines, qid, block)
-    counter[0] += 1
-    bbox = region_bbox(page, lines, y0, y1)
-    rel = crop_formula_image(page, bbox, f"q{qid}_stem_{counter[0]}")
-    return [{"type": "image", "src": rel, "alt": f"第{qid}题"}], answer_from_head
+    stem_lines = sorted(
+        [ln for ln in lines if y0 - 1 <= ln["top"] <= y1 + 1],
+        key=lambda x: x["top"],
+    )
+
+    if not stem_needs_formula_image(head, stem_lines):
+        return [{"type": "text", "content": text_to_display(head)}], answer_from_head
+
+    segments: List[dict] = []
+    text_buf: List[str] = []
+
+    def flush_text() -> None:
+        if not text_buf:
+            return
+        merged = text_to_display(" ".join(text_buf))
+        if merged.strip():
+            segments.append({"type": "text", "content": merged})
+        text_buf.clear()
+
+    i = 0
+    while i < len(stem_lines):
+        ln = stem_lines[i]
+        if is_math_line(ln):
+            flush_text()
+            j = i + 1
+            while j < len(stem_lines) and is_math_line(stem_lines[j]):
+                j += 1
+            ty0 = stem_lines[i]["top"]
+            ty1 = stem_lines[j - 1]["top"] + max(stem_lines[j - 1].get("size", 12) * 1.5, 18)
+            counter[0] += 1
+            rel = crop_stem_formula_image(page, lines, ty0, ty1, qid, counter[0])
+            if rel:
+                segments.append({"type": "image", "src": rel, "alt": "公式"})
+            i = j
+        else:
+            text_buf.append(line_display_text(ln, strip_qid=(i == 0)))
+            i += 1
+
+    flush_text()
+    if not segments:
+        segments.append({"type": "text", "content": text_to_display(head)})
+    return segments, answer_from_head
 
 
 def find_page_for_question(qid: int, block: str, page_texts: List[str]) -> int:
